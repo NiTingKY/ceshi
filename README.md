@@ -107,7 +107,7 @@ The project includes repeatable scripts rather than one-off manual AI prompting.
 | Script | Purpose |
 | --- | --- |
 | `pipeline/explore_betterme.js` | Runs the Playwright funnel exploration and captures evidence |
-| `pipeline/case-generator.js` | Generates draft test cases from `flow-log.json` |
+| `pipeline/case-generator.js` | Generates draft test cases from `exploration/runs/2026-05-24-112646/flow-log.json` |
 | `pipeline/final-case-builder.js` | Merges manual and script-generated cases into final CSV/JSON |
 
 AI workflow documentation:
@@ -124,6 +124,7 @@ Portable setup:
 ```powershell
 npm install
 npm test
+npm run audit
 ```
 
 The commands below use the local Codex runtime path that was used while building this workspace. They are kept as a reproducibility record, but `npm install` plus the `package.json` scripts should be preferred on a fresh machine.
@@ -158,6 +159,21 @@ Expected:
 
 ## How to Re-run Exploration
 
+Portable safe exploration:
+
+```powershell
+npm install
+npx playwright install chromium
+$env:BETTERME_MAX_STEPS='75'
+npm run explore
+```
+
+If Playwright's bundled browser is unavailable but Microsoft Edge is installed elsewhere, set:
+
+```powershell
+$env:BETTERME_BROWSER_EXECUTABLE='C:\Path\To\msedge.exe'
+```
+
 Default safe exploration:
 
 ```powershell
@@ -182,19 +198,13 @@ $env:BETTERME_CHECKOUT_PROBE='1'
 Generate draft cases from a run:
 
 ```powershell
-& 'C:\Users\bao\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe' pipeline\case-generator.js `
-  'exploration\runs\2026-05-24-112646' `
-  'generated\2026-05-24-112646-cases'
+npm run generate:cases
 ```
 
 Build final cases:
 
 ```powershell
-& 'C:\Users\bao\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe' pipeline\final-case-builder.js `
-  'docs\test-cases-v1.csv' `
-  'generated\2026-05-24-112646-cases\generated-test-cases.csv' `
-  'docs\test-cases-final.csv' `
-  'docs\test-cases-final.json'
+npm run build:final
 ```
 
 ## Safety Notes

@@ -37,6 +37,7 @@ Portable path:
 ```powershell
 npm install
 npm test
+npm run audit
 ```
 
 Original local Codex-runtime commands:
@@ -54,10 +55,14 @@ $env:NODE_PATH="$base;$base\.pnpm\playwright@1.60.0\node_modules;$base\.pnpm\pla
 
 Expected latest verification:
 
-- `explore-helpers.test.js`: 16/16 pass
-- `browser-actions.test.js`: 6/6 pass
-- `case-generator.test.js`: 4/4 pass
-- `final-case-builder.test.js`: 5/5 pass
+- `pipeline/tests/explore-helpers.test.js`: 17/17 pass
+- `pipeline/tests/browser-actions.test.js`: 6/6 pass
+- `pipeline/tests/case-generator.test.js`: 4/4 pass
+- `pipeline/tests/final-case-builder.test.js`: 5/5 pass
+- `pipeline/tests/runtime.test.js`: 3/3 pass
+- `pipeline/tests/project-audit.test.js`: 4/4 pass
+- full `npm test`: 39/39 pass
+- `npm run audit`: 0 issues
 
 Check final case integrity:
 

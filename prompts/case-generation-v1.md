@@ -7,7 +7,7 @@ You are helping refine test cases for a BetterMe Pilates funnel QA assignment.
 You will receive:
 
 - A list of script-generated test cases.
-- Optional page snippets from `flow-log.json`.
+- Optional page snippets from `exploration/runs/2026-05-24-112646/flow-log.json`.
 - Optional risk register entries.
 
 ## Task

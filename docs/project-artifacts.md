@@ -23,7 +23,7 @@ This document is the delivery map for the whole workspace. It explains what each
 | File | Purpose | Notes |
 | --- | --- | --- |
 | `docs/test-cases-v1.csv` | Manual/AI-assisted first test case set | 74 cases, broader manual coverage |
-| `generated/2026-05-24-112646-cases/generated-test-cases.csv` | Script-generated cases from latest run | 51 cases, repeatable output from `flow-log.json` |
+| `generated/2026-05-24-112646-cases/generated-test-cases.csv` | Script-generated cases from latest run | 51 cases, repeatable output from `exploration/runs/2026-05-24-112646/flow-log.json` |
 | `docs/test-cases-final.csv` | Final merged delivery set | 75 cases, includes risk refs, evidence refs and refinement notes |
 | `docs/test-cases-final.json` | JSON mirror of final cases | Useful for later validation, LLM refinement, or import |
 
@@ -52,8 +52,10 @@ Why final has 75 cases:
 | `pipeline/explore_betterme.js` | Main Playwright funnel explorer | Covered indirectly by helper/action tests and live runs |
 | `pipeline/explore-helpers.js` | Page text extraction, stage classification, summaries, safe URL blocking | `pipeline/tests/explore-helpers.test.js` |
 | `pipeline/browser-actions.js` | Click helpers, consent handling, scratch gesture, payment surface inspection | `pipeline/tests/browser-actions.test.js` |
-| `pipeline/case-generator.js` | Converts `flow-log.json` into generated CSV/JSON test cases | `pipeline/tests/case-generator.test.js` |
+| `pipeline/case-generator.js` | Converts `exploration/runs/2026-05-24-112646/flow-log.json` into generated CSV/JSON test cases | `pipeline/tests/case-generator.test.js` |
 | `pipeline/final-case-builder.js` | Merges v1/manual cases with script output and adds risk/evidence fields | `pipeline/tests/final-case-builder.test.js` |
+| `pipeline/runtime.js` | Provides portable browser launch configuration with optional `BETTERME_BROWSER_EXECUTABLE` override | `pipeline/tests/runtime.test.js` |
+| `pipeline/project-audit.js` | Checks for mojibake, old declined-card claims, and broken concrete artifact references | `pipeline/tests/project-audit.test.js` |
 | `pipeline/playwright-runtime.md` | Runtime commands and environment notes | Updated with checkout-safe probe mode |
 
 ## Documentation Artifacts
@@ -85,6 +87,15 @@ Why final has 75 cases:
 | `package.json` | Portable npm scripts and Playwright dev dependency for fresh-machine setup |
 | `.gitignore` | Keeps dependency folders, logs, and local worktrees out of Git |
 
+Useful commands:
+
+```powershell
+npm test
+npm run audit
+npm run generate:cases
+npm run build:final
+```
+
 ## Verification Commands
 
 ```powershell
@@ -104,7 +115,7 @@ The next useful increment is an LLM-refinement simulation or implementation:
 
 1. Use `prompts/case-generation-v1.md`.
 2. Feed `docs/test-cases-final.json` plus selected page snippets.
-3. Produce `docs/test-cases-final-refined.csv` or an LLM review notes file.
+3. Produce an LLM review notes file or a future refined CSV artifact.
 4. Record input/output metadata in a log file.
 
 If avoiding real LLM calls, create a documented dry-run showing the prompt, input sample, expected schema, and validation rules.

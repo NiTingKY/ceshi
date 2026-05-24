@@ -50,7 +50,7 @@ Historical local runs kept out of Git to keep the remote repository small:
 | `pipeline/explore_betterme.js` | Runs Playwright exploration and captures evidence. |
 | `pipeline/explore-helpers.js` | Cleans text, classifies stages, chooses safe actions, blocks payment URLs. |
 | `pipeline/browser-actions.js` | Handles browser clicks, consent, scratch gesture, and payment surface inspection. |
-| `pipeline/case-generator.js` | Converts `flow-log.json` into generated test cases. |
+| `pipeline/case-generator.js` | Converts `exploration/runs/2026-05-24-112646/flow-log.json` into generated test cases. |
 | `pipeline/final-case-builder.js` | Merges manual and generated cases into final CSV/JSON with risk/evidence refs. |
 
 ## Safety Boundary

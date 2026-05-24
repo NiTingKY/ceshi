@@ -85,7 +85,7 @@ Open:
 
 Say:
 
-> Instead of only asking AI to write cases manually, I built a repeatable script layer. It parses `flow-log.json`, classifies pages, generates draft cases, and then merges them with manually reviewed cases while adding risk and evidence traceability.
+> Instead of only asking AI to write cases manually, I built a repeatable script layer. It parses `exploration/runs/2026-05-24-112646/flow-log.json`, classifies pages, generates draft cases, and then merges them with manually reviewed cases while adding risk and evidence traceability.
 
 Point out:
 

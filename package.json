@@ -5,6 +5,7 @@
   "description": "QA design and script-assisted testing workflow for the BetterMe Pilates funnel.",
   "type": "commonjs",
   "scripts": {
+    "audit": "node pipeline/project-audit.js",
     "test": "node --test pipeline/tests/*.test.js",
     "test:helpers": "node --test pipeline/tests/explore-helpers.test.js",
     "test:browser-actions": "node --test pipeline/tests/browser-actions.test.js",

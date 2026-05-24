@@ -4,7 +4,7 @@ Updated: 2026-05-24
 
 ## Goal
 
-Provide a repeatable generation layer that turns captured BetterMe funnel runs into structured test case drafts. This is the stable script layer before adding an LLM refinement step.
+Provide a repeatable generation layer that turns captured BetterMe funnel runs into structured test case drafts. This is the deterministic script layer before any optional LLM refinement step.
 
 ## Current Implementation
 
@@ -14,26 +14,34 @@ Script:
 
 Input:
 
-- `exploration/runs/<timestamp>/flow-log.json`
+- `exploration/runs/2026-05-24-112646/flow-log.json`
 
 Outputs:
-
-- `generated/<run-id>-cases/generated-test-cases.csv`
-- `generated/<run-id>-cases/generated-test-cases.json`
-- `generated/<run-id>-cases/case-generation-log.json`
-
-Latest generated output:
 
 - `generated/2026-05-24-112646-cases/generated-test-cases.csv`
 - `generated/2026-05-24-112646-cases/generated-test-cases.json`
 - `generated/2026-05-24-112646-cases/case-generation-log.json`
 
-## Command
+## Commands
+
+Portable command:
 
 ```powershell
-& 'C:\Users\bao\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe' pipeline\case-generator.js `
-  'C:\Users\bao\Documents\测试开发萧山\exploration\runs\2026-05-24-112646' `
-  'C:\Users\bao\Documents\测试开发萧山\generated\2026-05-24-112646-cases'
+npm run generate:cases
+```
+
+Equivalent direct Node command:
+
+```powershell
+node pipeline/case-generator.js `
+  exploration/runs/2026-05-24-112646 `
+  generated/2026-05-24-112646-cases
+```
+
+Build final merged cases:
+
+```powershell
+npm run build:final
 ```
 
 ## Latest Result
@@ -43,20 +51,22 @@ Latest generated output:
 - Module distribution:
   - Checkout: 1
   - Consent: 2
-  - Content: 9
+  - Content: 11
   - Discount: 2
   - Input: 4
   - Loader: 5
-  - Quiz: 28
+  - Quiz: 26
 
 ## Rule-Based Classification
 
-The generator currently maps observed pages into these page types:
+The generator maps observed pages into these page types:
 
 - `single_select`
 - `multi_select`
 - `health_consent_input`
 - `unit_input`
+- `email_input`
+- `name_input`
 - `loader`
 - `discount`
 - `paywall`
@@ -84,6 +94,8 @@ Planned LLM step:
 Tests:
 
 - `pipeline/tests/case-generator.test.js`
+- `pipeline/tests/final-case-builder.test.js`
+- `pipeline/tests/project-audit.test.js`
 
 Coverage:
 
@@ -91,8 +103,7 @@ Coverage:
 - Deterministic case generation.
 - Section header filtering.
 - CSV escaping.
+- Final case merge behavior.
+- Basic artifact quality audit.
 
-Latest verification:
-
-- `case-generator.test.js`: 4/4 pass
-- Full helper/action tests also pass as of this update.
+Latest verification is captured in `docs/submission-checklist.md`.

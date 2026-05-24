@@ -57,7 +57,7 @@ Observed renewal copy states that after the intro plan, the user is charged HK$2
 - Quiz cases should cover page type, data boundaries, state recovery, and not only a single happy path.
 - Paywall cases should cover discount carryover, pricing consistency, plan selection, countdown behavior, and subscription disclosure.
 - Checkout cases must stay inside a safe boundary: inspect fields, block external payment gateways, and avoid successful payment.
-- Automation can convert `flow-log.json` and `pages/*.txt` into structured page objects, then generate candidate test cases by page type.
+- Automation can convert `exploration/runs/2026-05-24-112646/flow-log.json` and captured page text files into structured page objects, then generate candidate test cases by page type.
 
 ## Recommended Follow-Up
 

@@ -95,7 +95,7 @@ Why it matters:
 Outcome:
 
 - Added `pipeline/case-generator.js`.
-- Generated 51 cases from `flow-log.json`.
+- Generated 51 cases from `exploration/runs/2026-05-24-112646/flow-log.json`.
 - Added generator tests.
 - Added AI workflow and prompt scaffold.
 

@@ -46,14 +46,14 @@ $env:BETTERME_CHECKOUT_PROBE='1'
 
 Latest verified test commands:
 
-- `node --test pipeline/tests/explore-helpers.test.js`: 16/16 pass
+- `node --test pipeline/tests/explore-helpers.test.js`: 17/17 pass
 - `node --test pipeline/tests/browser-actions.test.js`: 6/6 pass
 
 ## Next Recommended Task
 
 Build the repeatable AI/test-case generation script layer:
 
-- Parse `flow-log.json`.
+- Parse `exploration/runs/2026-05-24-112646/flow-log.json`.
 - Normalize page objects.
 - Map page types to case templates.
 - Output CSV/JSON.

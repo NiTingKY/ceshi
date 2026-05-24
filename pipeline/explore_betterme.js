@@ -1,6 +1,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const { chromium } = require("playwright");
+const { browserLaunchOptions } = require("./runtime");
 const {
   clean,
   extractMainLines,
@@ -23,7 +24,6 @@ const {
 } = require("./browser-actions");
 
 const TARGET_URL = "https://betterme-pilates.com/first-page-brand-palette?flow=2117";
-const EDGE_PATH = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe";
 const MAX_STEPS = Number(process.env.BETTERME_MAX_STEPS || 80);
 const CHECKOUT_PROBE = process.env.BETTERME_CHECKOUT_PROBE === "1";
 
@@ -235,10 +235,7 @@ async function main() {
   let stopReason = "max steps reached";
   let checkoutProbeUsed = false;
 
-  const browser = await chromium.launch({
-    headless: true,
-    executablePath: EDGE_PATH,
-  });
+  const browser = await chromium.launch(browserLaunchOptions());
 
   try {
     const context = await browser.newContext({

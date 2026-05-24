@@ -8,14 +8,14 @@ const {
   inspectPaymentSurface,
   scratchDiscountIfPresent,
 } = require("../browser-actions");
+const { browserLaunchOptions } = require("../runtime");
 
-const EDGE_PATH = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe";
+function launchBrowser() {
+  return chromium.launch(browserLaunchOptions());
+}
 
 test("clickText clicks the clickable parent when visible text is nested in a span", async () => {
-  const browser = await chromium.launch({
-    headless: true,
-    executablePath: EDGE_PATH,
-  });
+  const browser = await launchBrowser();
 
   try {
     const page = await browser.newPage();
@@ -35,10 +35,7 @@ test("clickText clicks the clickable parent when visible text is nested in a spa
 });
 
 test("clickText returns false instead of throwing when the matching button is disabled", async () => {
-  const browser = await chromium.launch({
-    headless: true,
-    executablePath: EDGE_PATH,
-  });
+  const browser = await launchBrowser();
 
   try {
     const page = await browser.newPage();
@@ -57,10 +54,7 @@ test("clickText returns false instead of throwing when the matching button is di
 });
 
 test("clickLastText clicks the last matching clickable element", async () => {
-  const browser = await chromium.launch({
-    headless: true,
-    executablePath: EDGE_PATH,
-  });
+  const browser = await launchBrowser();
 
   try {
     const page = await browser.newPage();
@@ -80,10 +74,7 @@ test("clickLastText clicks the last matching clickable element", async () => {
 });
 
 test("acceptConsentIfPresent checks an unchecked consent checkbox", async () => {
-  const browser = await chromium.launch({
-    headless: true,
-    executablePath: EDGE_PATH,
-  });
+  const browser = await launchBrowser();
 
   try {
     const page = await browser.newPage();
@@ -104,10 +95,7 @@ test("acceptConsentIfPresent checks an unchecked consent checkbox", async () => 
 });
 
 test("scratchDiscountIfPresent drags across the visible scratch area", async () => {
-  const browser = await chromium.launch({
-    headless: true,
-    executablePath: EDGE_PATH,
-  });
+  const browser = await launchBrowser();
 
   try {
     const page = await browser.newPage();
@@ -131,10 +119,7 @@ test("scratchDiscountIfPresent drags across the visible scratch area", async () 
 });
 
 test("inspectPaymentSurface captures visible inputs and button text without submitting", async () => {
-  const browser = await chromium.launch({
-    headless: true,
-    executablePath: EDGE_PATH,
-  });
+  const browser = await launchBrowser();
 
   try {
     const page = await browser.newPage();
