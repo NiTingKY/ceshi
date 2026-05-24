@@ -1,0 +1,2408 @@
+[
+  {
+    "step": 1,
+    "actionBeforeCapture": "start",
+    "url": "https://betterme-pilates.com/first-page-brand-palette?flow=2117",
+    "title": "Pilates for beginners",
+    "stage": "quiz",
+    "lines": [
+      "PILATES FOR BEGINNERS",
+      "SELECT YOUR AGE TO START",
+      "1-MINUTE QUIZ",
+      "Age: 18-29",
+      "Age: 30-39",
+      "Age: 40-49",
+      "Age: 50+",
+      "By choosing your age and continuing you agree to our Terms of Service | Privacy Policy",
+      "Please review before continuing"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/first-page-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Age: 18-29",
+        "Age: 30-39",
+        "Age: 40-49",
+        "Age: 50+",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "PILATES FOR BEGINNERS SELECT YOUR AGE TO START 1-MINUTE QUIZ Age: 18-29 Age: 30-39 Age: 40-49 Age: 50+ By choosing your age and continuing you agree to our Terms of Service | Privacy Policy Please review before continuing"
+  },
+  {
+    "step": 1,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "Age: 30-39",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 2,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Over 10 million people",
+      "have chosen BetterMe",
+      "CONTINUE"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "CONTINUE",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Over 10 million people have chosen BetterMe CONTINUE"
+  },
+  {
+    "step": 2,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "CONTINUE",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 3,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "My Profile",
+      "What is your main goal?",
+      "Lose weight",
+      "Increase muscle strength",
+      "Develop flexibility",
+      "Reduce stress & worry",
+      "Improve posture"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Lose weight",
+        "Increase muscle strength",
+        "Develop flexibility",
+        "Reduce stress & worry",
+        "Improve posture",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "My Profile What is your main goal? Lose weight Increase muscle strength Develop flexibility Reduce stress & worry Improve posture"
+  },
+  {
+    "step": 3,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "Lose weight",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 4,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "My Profile",
+      "How would you describe your physical build?",
+      "Slim",
+      "Mid-sized",
+      "Plus-sized",
+      "Significantly overweight"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Slim",
+        "Mid-sized",
+        "Plus-sized",
+        "Significantly overweight",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "My Profile How would you describe your physical build? Slim Mid-sized Plus-sized Significantly overweight"
+  },
+  {
+    "step": 4,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "Mid-sized",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 5,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "My Profile",
+      "What is your “dream body”?",
+      "Thin",
+      "Toned",
+      "Curvy",
+      "Average"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Thin",
+        "Toned",
+        "Curvy",
+        "Average",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "My Profile What is your “dream body”? Thin Toned Curvy Average"
+  },
+  {
+    "step": 5,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "Toned",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 6,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "My Profile",
+      "How does your weight typically change?",
+      "I struggle to gain weight or muscle",
+      "I gain and lose weight easily",
+      "I gain weight fast but lose it slowly"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "I struggle to gain weight or muscle",
+        "I gain and lose weight easily",
+        "I gain weight fast but lose it slowly",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "My Profile How does your weight typically change? I struggle to gain weight or muscle I gain and lose weight easily I gain weight fast but lose it slowly"
+  },
+  {
+    "step": 6,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "I gain and lose weight easily",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 7,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Lose weight easily with Pilates for Beginners",
+      "Tired of lengthy, ineffective workouts? Restrictive diets leave you frustrated?",
+      "Our Pilates Plan for Beginners will help you achieve that lean and toned look in just 15-20 min a day.",
+      "CONTINUE"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "CONTINUE",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Lose weight easily with Pilates for Beginners Tired of lengthy, ineffective workouts? Restrictive diets leave you frustrated? Our Pilates Plan for Beginners will help you achieve that lean and toned look in just 15-20 min a day. CONTINUE"
+  },
+  {
+    "step": 7,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "CONTINUE",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 8,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "My Profile",
+      "How long ago were you in the best shape of your life?",
+      "Less than a year ago",
+      "1 to 2 years ago",
+      "More than 3 years ago",
+      "Never"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Less than a year ago",
+        "1 to 2 years ago",
+        "More than 3 years ago",
+        "Never",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "My Profile How long ago were you in the best shape of your life? Less than a year ago 1 to 2 years ago More than 3 years ago Never"
+  },
+  {
+    "step": 8,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "Less than a year ago",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 9,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Activity",
+      "Have you tried Pilates workouts before?",
+      "I'm just starting out",
+      "I have some experience",
+      "I am proficient"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "I'm just starting out",
+        "I have some experience",
+        "I am proficient",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Activity Have you tried Pilates workouts before? I'm just starting out I have some experience I am proficient"
+  },
+  {
+    "step": 9,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "I'm just starting out",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 10,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Activity",
+      "What are your target zones?",
+      "Choose all that apply",
+      "Belly",
+      "Butt",
+      "Legs",
+      "Chest",
+      "NEXT STEP"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Belly",
+        "Butt",
+        "Legs",
+        "Chest",
+        "NEXT STEP",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Activity What are your target zones? Choose all that apply Belly Butt Legs Chest NEXT STEP"
+  },
+  {
+    "step": 10,
+    "action": "multi",
+    "clickedTargets": [
+      {
+        "target": "Belly",
+        "clicked": true
+      },
+      {
+        "target": "Butt",
+        "clicked": true
+      },
+      {
+        "target": "NEXT STEP",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 11,
+    "actionBeforeCapture": "multi",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Burn belly fat and tone your whole body",
+      "Trim your waist, slim down thighs, tone your booty, chest, arms and legs.",
+      "Experience a full-body transformation at home!",
+      "CONTINUE"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "CONTINUE",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Burn belly fat and tone your whole body Trim your waist, slim down thighs, tone your booty, chest, arms and legs. Experience a full-body transformation at home! CONTINUE"
+  },
+  {
+    "step": 11,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "CONTINUE",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 12,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Activity",
+      "How flexible are you?",
+      "Pretty flexible",
+      "Just getting started",
+      "Not that good",
+      "Not sure"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Pretty flexible",
+        "Just getting started",
+        "Not that good",
+        "Not sure",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Activity How flexible are you? Pretty flexible Just getting started Not that good Not sure"
+  },
+  {
+    "step": 12,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "Pretty flexible",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 13,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Activity",
+      "Do you lose breath when taking the stairs?",
+      "I'm so out of breath I can't talk",
+      "I'm slightly out of breath but can talk",
+      "I'm OK after one flight of stairs",
+      "I can handle a few flights of stairs"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "I'm so out of breath I can't talk",
+        "I'm slightly out of breath but can talk",
+        "I'm OK after one flight of stairs",
+        "I can handle a few flights of stairs",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Activity Do you lose breath when taking the stairs? I'm so out of breath I can't talk I'm slightly out of breath but can talk I'm OK after one flight of stairs I can handle a few flights of stairs"
+  },
+  {
+    "step": 13,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "I'm slightly out of breath but can talk",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 14,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Activity",
+      "Do you struggle with any of the following?",
+      "Choose all that apply",
+      "Sensitive back",
+      "Sensitive knees",
+      "None of the above",
+      "NEXT STEP"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Sensitive back",
+        "Sensitive knees",
+        "None of the above",
+        "NEXT STEP",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Activity Do you struggle with any of the following? Choose all that apply Sensitive back Sensitive knees None of the above NEXT STEP"
+  },
+  {
+    "step": 14,
+    "action": "multi",
+    "clickedTargets": [
+      {
+        "target": "Sensitive back",
+        "clicked": true
+      },
+      {
+        "target": "Sensitive knees",
+        "clicked": true
+      },
+      {
+        "target": "NEXT STEP",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 15,
+    "actionBeforeCapture": "multi",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Relieve body tension after a long day",
+      "Do gentle yet effective Pilates exercises and stretches to alleviate tension in your back, neck, and shoulders, while also supporting knee mobility.",
+      "CONTINUE"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "CONTINUE",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Relieve body tension after a long day Do gentle yet effective Pilates exercises and stretches to alleviate tension in your back, neck, and shoulders, while also supporting knee mobility. CONTINUE"
+  },
+  {
+    "step": 15,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "CONTINUE",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 16,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Activity",
+      "How often do you exercise?",
+      "Almost every day",
+      "Several times per week",
+      "Several times per month",
+      "Never"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Almost every day",
+        "Several times per week",
+        "Several times per month",
+        "Never",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Activity How often do you exercise? Almost every day Several times per week Several times per month Never"
+  },
+  {
+    "step": 16,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "Almost every day",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 17,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Activity",
+      "How often do you go for walks?",
+      "Almost every day",
+      "3-4 times per week",
+      "1-2 times per week",
+      "More like once a month"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Almost every day",
+        "3-4 times per week",
+        "1-2 times per week",
+        "More like once a month",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Activity How often do you go for walks? Almost every day 3-4 times per week 1-2 times per week More like once a month"
+  },
+  {
+    "step": 17,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "Almost every day",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 18,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Lifestyle & Habits",
+      "What is your work schedule like?",
+      "9 to 5",
+      "Night shifts",
+      "My hours are flexible",
+      "I'm retired/not working right now"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "9 to 5",
+        "Night shifts",
+        "My hours are flexible",
+        "I'm retired/not working right now",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Lifestyle & Habits What is your work schedule like? 9 to 5 Night shifts My hours are flexible I'm retired/not working right now"
+  },
+  {
+    "step": 18,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "9 to 5",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 19,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Lifestyle & Habits",
+      "How would you describe your typical day?",
+      "I spend most of the day sitting",
+      "I take active breaks",
+      "I’m on my feet all day long"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "I spend most of the day sitting",
+        "I take active breaks",
+        "I’m on my feet all day long",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Lifestyle & Habits How would you describe your typical day? I spend most of the day sitting I take active breaks I’m on my feet all day long"
+  },
+  {
+    "step": 19,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "I spend most of the day sitting",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 20,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Lifestyle & Habits",
+      "How are your energy levels during the day?",
+      "High and steady",
+      "Dragging before meals",
+      "Post lunch slump",
+      "Low, I feel tired throughout the day"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "High and steady",
+        "Dragging before meals",
+        "Post lunch slump",
+        "Low, I feel tired throughout the day",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Lifestyle & Habits How are your energy levels during the day? High and steady Dragging before meals Post lunch slump Low, I feel tired throughout the day"
+  },
+  {
+    "step": 20,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "High and steady",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 21,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Lifestyle & Habits",
+      "How much water do you drink daily?",
+      "I only have coffee or tea",
+      "About 2 glasses (16 oz)",
+      "2 to 6 glasses (16-48 oz)",
+      "More than 6 glasses"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "I only have coffee or tea",
+        "About 2 glasses (16 oz)",
+        "2 to 6 glasses (16-48 oz)",
+        "More than 6 glasses",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Lifestyle & Habits How much water do you drink daily? I only have coffee or tea About 2 glasses (16 oz) 2 to 6 glasses (16-48 oz) More than 6 glasses"
+  },
+  {
+    "step": 21,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "2 to 6 glasses (16-48 oz)",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 22,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Lifestyle & Habits",
+      "How much sleep do you usually get?",
+      "Less than 5 hours",
+      "5-6 hours",
+      "7-8 hours",
+      "More than 8 hours"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Less than 5 hours",
+        "5-6 hours",
+        "7-8 hours",
+        "More than 8 hours",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Lifestyle & Habits How much sleep do you usually get? Less than 5 hours 5-6 hours 7-8 hours More than 8 hours"
+  },
+  {
+    "step": 22,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "7-8 hours",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 23,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Nutrition",
+      "When do you usually have breakfast?",
+      "Between 6 and 8 am",
+      "Between 8 and 10 am",
+      "Between 10 am and noon",
+      "I usually skip breakfast"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Between 6 and 8 am",
+        "Between 8 and 10 am",
+        "Between 10 am and noon",
+        "I usually skip breakfast",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Nutrition When do you usually have breakfast? Between 6 and 8 am Between 8 and 10 am Between 10 am and noon I usually skip breakfast"
+  },
+  {
+    "step": 23,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "Between 6 and 8 am",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 24,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Nutrition",
+      "How about lunch?",
+      "Between 10 am and noon",
+      "Between noon and 2 pm",
+      "Between 2 and 4 pm",
+      "I usually skip lunch"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Between 10 am and noon",
+        "Between noon and 2 pm",
+        "Between 2 and 4 pm",
+        "I usually skip lunch",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Nutrition How about lunch? Between 10 am and noon Between noon and 2 pm Between 2 and 4 pm I usually skip lunch"
+  },
+  {
+    "step": 24,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "Between noon and 2 pm",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 25,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Nutrition",
+      "What time do you have dinner?",
+      "Between 4 and 6 pm",
+      "Between 6 and 8 pm",
+      "Between 8 and 10 pm",
+      "I usually skip dinner"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Between 4 and 6 pm",
+        "Between 6 and 8 pm",
+        "Between 8 and 10 pm",
+        "I usually skip dinner",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Nutrition What time do you have dinner? Between 4 and 6 pm Between 6 and 8 pm Between 8 and 10 pm I usually skip dinner"
+  },
+  {
+    "step": 25,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "Between 6 and 8 pm",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 26,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Nutrition",
+      "What type of diet do you prefer?",
+      "WITH MEAT",
+      "Traditional",
+      "I enjoy everything",
+      "Keto",
+      "I prefer high-fat low-carb meals",
+      "Paleo",
+      "I don't eat processed foods",
+      "WITHOUT MEAT",
+      "Vegetarian",
+      "I avoid meat and fish",
+      "Vegan (Plant Diet)",
+      "I do not eat animal products",
+      "Keto Vegan",
+      "I eat low-carb plant-based meals only",
+      "WITH FISH",
+      "Mediterranean",
+      "I eat plenty of veggies, grains and seafood",
+      "Pescatarian",
+      "I avoid meat but enjoy fish",
+      "WITHOUT ALLERGENS",
+      "Lactose Free",
+      "I do not consume foods with lactose",
+      "Gluten Free",
+      "I avoid gluten-containing grains"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Traditional I enjoy everything",
+        "Keto I prefer high-fat low-carb meals",
+        "Paleo I don't eat processed foods",
+        "Vegetarian I avoid meat and fish",
+        "Vegan (Plant Diet) I do not eat animal products",
+        "Keto Vegan I eat low-carb plant-based meals only",
+        "Mediterranean I eat plenty of veggies, grains and seafood",
+        "Pescatarian I avoid meat but enjoy fish",
+        "Lactose Free I do not consume foods with lactose",
+        "Gluten Free I avoid gluten-containing grains",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Nutrition What type of diet do you prefer? WITH MEAT Traditional I enjoy everything Keto I prefer high-fat low-carb meals Paleo I don't eat processed foods WITHOUT MEAT Vegetarian I avoid meat and fish Vegan (Plant Diet) I do not eat animal products Keto Vegan I eat low-carb plant-based meals only WITH FISH Mediterranean I eat plenty of veggies, grains and seafood Pescatarian I avoid meat but enjoy fish WITHOUT ALLERGENS Lactose Free I do not consume foods with lactose Gluten Free I avoid gluten-containing grains"
+  },
+  {
+    "step": 26,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "Traditional",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 27,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Nutrition",
+      "Do you have any of the following bad habits?",
+      "Choose all that apply",
+      "I eat late at night",
+      "I can't quit sugar",
+      "I can't live without soda",
+      "I eat too much salt",
+      "None of the above",
+      "NEXT STEP"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "I eat late at night",
+        "I can't quit sugar",
+        "I can't live without soda",
+        "I eat too much salt",
+        "None of the above",
+        "NEXT STEP",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Nutrition Do you have any of the following bad habits? Choose all that apply I eat late at night I can't quit sugar I can't live without soda I eat too much salt None of the above NEXT STEP"
+  },
+  {
+    "step": 27,
+    "action": "multi",
+    "clickedTargets": [
+      {
+        "target": "I eat late at night",
+        "clicked": true
+      },
+      {
+        "target": "I can't quit sugar",
+        "clicked": true
+      },
+      {
+        "target": "NEXT STEP",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 28,
+    "actionBeforeCapture": "multi",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Almost There",
+      "Have any of the following life events led to weight gain in the last few years?",
+      "Choose all that apply",
+      "Marriage or relationship",
+      "Busy work or family life",
+      "Financial struggles",
+      "High stress or worry",
+      "Slower metabolism due to aging",
+      "None of the above",
+      "NEXT STEP"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Marriage or relationship",
+        "Busy work or family life",
+        "Financial struggles",
+        "High stress or worry",
+        "Slower metabolism due to aging",
+        "None of the above",
+        "NEXT STEP",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Almost There Have any of the following life events led to weight gain in the last few years? Choose all that apply Marriage or relationship Busy work or family life Financial struggles High stress or worry Slower metabolism due to aging None of the above NEXT STEP"
+  },
+  {
+    "step": 28,
+    "action": "multi",
+    "clickedTargets": [
+      {
+        "target": "Almost There",
+        "clicked": true
+      },
+      {
+        "target": "Marriage or relationship",
+        "clicked": true
+      },
+      {
+        "target": "NEXT STEP",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 29,
+    "actionBeforeCapture": "multi",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Almost There",
+      "How tall are you?",
+      "ft",
+      "cm",
+      "cm",
+      "Please, enter a value from 90 cm to 243 cm",
+      "I consent to BetterMe processing my health onboarding data to provide services and enhance my user experience. Privacy Policy.",
+      "NEXT STEP",
+      "NEXT STEP"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [
+        {
+          "frameUrl": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+          "type": "number",
+          "name": "height(cm)",
+          "placeholder": "Height",
+          "ariaLabel": "",
+          "autocomplete": ""
+        },
+        {
+          "frameUrl": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "ariaLabel": "",
+          "autocomplete": ""
+        }
+      ],
+      "buttons": [
+        "ft",
+        "cm",
+        "NEXT STEP",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Almost There How tall are you? ft cm cm Please, enter a value from 90 cm to 243 cm I consent to BetterMe processing my health onboarding data to provide services and enhance my user experience. Privacy Policy. NEXT STEP NEXT STEP"
+  },
+  {
+    "step": 29,
+    "action": "filled inputs then continued",
+    "clicked": true,
+    "continuation": "NEXT STEP",
+    "events": [
+      {
+        "type": "consent",
+        "accepted": true
+      },
+      {
+        "type": "fill",
+        "index": 0,
+        "placeholder": "Height",
+        "value": "170"
+      }
+    ]
+  },
+  {
+    "step": 30,
+    "actionBeforeCapture": "filled inputs then continued",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Almost There",
+      "How tall are you?",
+      "ft",
+      "cm",
+      "cm",
+      "I consent to BetterMe processing my health onboarding data to provide services and enhance my user experience. Privacy Policy.",
+      "NEXT STEP",
+      "NEXT STEP"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [
+        {
+          "frameUrl": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+          "type": "number",
+          "name": "weight-kg",
+          "placeholder": "Your weight",
+          "ariaLabel": "",
+          "autocomplete": ""
+        }
+      ],
+      "buttons": [
+        "lbs",
+        "kg",
+        "NEXT STEP",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Almost There How tall are you? ft cm cm I consent to BetterMe processing my health onboarding data to provide services and enhance my user experience. Privacy Policy. NEXT STEP NEXT STEP"
+  },
+  {
+    "step": 30,
+    "action": "filled inputs then continued",
+    "clicked": true,
+    "continuation": "NEXT STEP",
+    "events": [
+      {
+        "type": "consent",
+        "accepted": false
+      },
+      {
+        "type": "fill",
+        "index": 0,
+        "placeholder": "Your weight",
+        "value": "170"
+      }
+    ]
+  },
+  {
+    "step": 31,
+    "actionBeforeCapture": "filled inputs then continued",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Almost There",
+      "What’s your current weight?",
+      "lbs",
+      "kg",
+      "kg",
+      "Your BMI is 59 which is considered obese",
+      "There's a lot you could gain by losing a little weight. We’ll use your BMI to create the weight loss program you need.",
+      "NEXT STEP",
+      "NEXT STEP"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [
+        {
+          "frameUrl": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+          "type": "number",
+          "name": "weight-kg",
+          "placeholder": "Goal weight",
+          "ariaLabel": "",
+          "autocomplete": ""
+        }
+      ],
+      "buttons": [
+        "lbs",
+        "kg",
+        "NEXT STEP",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Almost There What’s your current weight? lbs kg kg Your BMI is 59 which is considered obese There's a lot you could gain by losing a little weight. We’ll use your BMI to create the weight loss program you need. NEXT STEP NEXT STEP"
+  },
+  {
+    "step": 31,
+    "action": "filled inputs then continued",
+    "clicked": true,
+    "continuation": "NEXT STEP",
+    "events": [
+      {
+        "type": "fill",
+        "index": 0,
+        "placeholder": "Goal weight",
+        "value": "62"
+      }
+    ]
+  },
+  {
+    "step": 32,
+    "actionBeforeCapture": "filled inputs then continued",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Almost There",
+      "Got it! And what's your goal weight?",
+      "lbs",
+      "kg",
+      "kg",
+      "It’s worth it: lose 64% of your weight",
+      "The Mayo Clinic conducted a study which found that overweight people who lose 20% or more of their body weight are more than twice as likely to show improved metabolic health as those who only lose 5-10%.",
+      "NEXT STEP",
+      "NEXT STEP"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [
+        {
+          "frameUrl": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+          "type": "number",
+          "name": "age",
+          "placeholder": "Age",
+          "ariaLabel": "",
+          "autocomplete": ""
+        }
+      ],
+      "buttons": [
+        "NEXT STEP",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Almost There Got it! And what's your goal weight? lbs kg kg It’s worth it: lose 64% of your weight The Mayo Clinic conducted a study which found that overweight people who lose 20% or more of their body weight are more than twice as likely to show improved metabolic health as those who only lose 5-10%. NEXT STEP NEXT STEP"
+  },
+  {
+    "step": 32,
+    "action": "filled inputs then continued",
+    "clicked": true,
+    "continuation": "NEXT STEP",
+    "events": [
+      {
+        "type": "fill",
+        "index": 0,
+        "placeholder": "Age",
+        "value": "62"
+      }
+    ]
+  },
+  {
+    "step": 33,
+    "actionBeforeCapture": "filled inputs then continued",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Here’s your wellness profile",
+      "Body Mass Index (BMI)",
+      "You - 58.82",
+      "15",
+      "18.5",
+      "25",
+      "30",
+      "40",
+      "UNDERWEIGHT",
+      "NORMAL",
+      "OVERWEIGHT",
+      "OBESE",
+      "Risks of unhealthy BMI:",
+      "High blood pressure, increased risk of heart attack, stroke, type 2 diabetes, chronic back and joint pain",
+      "Body type",
+      "Mesomorph",
+      "Lifestyle",
+      "Sedentary",
+      "Fitness level",
+      "Advanced",
+      "Metabolism",
+      "Moderate, challenging to stay trim",
+      "CONTINUE"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "CONTINUE",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Here’s your wellness profile Body Mass Index (BMI) You - 58.82 15 18.5 25 30 40 UNDERWEIGHT NORMAL OVERWEIGHT OBESE Risks of unhealthy BMI: High blood pressure, increased risk of heart attack, stroke, type 2 diabetes, chronic back and joint pain Body type Mesomorph Lifestyle Sedentary Fitness level Advanced Metabolism Moderate, challenging to stay trim CONTINUE"
+  },
+  {
+    "step": 33,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "CONTINUE",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 34,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Almost There",
+      "Do you have an important event coming up?",
+      "Having something to look forward to can be a great motivator for reaching your goal",
+      "Vacation",
+      "Wedding",
+      "Holiday",
+      "Sporting event",
+      "Reunion",
+      "Birthday",
+      "Other",
+      "No events any time soon"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "Vacation",
+        "Wedding",
+        "Holiday",
+        "Sporting event",
+        "Reunion",
+        "Birthday",
+        "Other",
+        "No events any time soon",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Almost There Do you have an important event coming up? Having something to look forward to can be a great motivator for reaching your goal Vacation Wedding Holiday Sporting event Reunion Birthday Other No events any time soon"
+  },
+  {
+    "step": 34,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "No events any time soon",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 35,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "When is your event?",
+      "We will keep this important event in mind for your journey",
+      "Select Date",
+      "September 2026",
+      "Su",
+      "Mo",
+      "Tu",
+      "We",
+      "Th",
+      "Fr",
+      "Sa",
+      "30",
+      "31",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "1",
+      "2",
+      "3",
+      "Your data will be processed in accordance with our Privacy Policy",
+      "CONTINUE",
+      "SKIP THIS STEP"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [
+        {
+          "frameUrl": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+          "type": "",
+          "name": "",
+          "placeholder": "",
+          "ariaLabel": "",
+          "autocomplete": ""
+        }
+      ],
+      "buttons": [
+        "Select Date",
+        "30",
+        "31",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "CONTINUE",
+        "SKIP THIS STEP",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "When is your event? We will keep this important event in mind for your journey Select Date September 2026 Su Mo Tu We Th Fr Sa 30 31 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 1 2 3 Your data will be processed in accordance with our Privacy Policy CONTINUE SKIP THIS STEP"
+  },
+  {
+    "step": 35,
+    "action": "filled inputs then continued",
+    "clicked": true,
+    "continuation": "CONTINUE",
+    "events": [
+      {
+        "type": "fill",
+        "index": 0,
+        "placeholder": "",
+        "value": "70"
+      }
+    ]
+  },
+  {
+    "step": 36,
+    "actionBeforeCapture": "filled inputs then continued",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "loader",
+    "lines": [
+      "3%",
+      "Creating your Pilates Plan for Beginners",
+      "Your Pilates Plan for Beginners is ready!",
+      "Over 10 million people",
+      "have chosen BetterMe",
+      "I'm really enjoying the app",
+      "Amanda",
+      "I'm really enjoying the app the exercises are well demonstrated and there is enough time to go along without feeling like your rushing. I have never done pilates and was nervous about taking a class so being able to do it from home was perfect. After 1 week I have noticed a difference in my arms and legs but am hoping for some help on my stomach muscles over the next 3 weeks.",
+      "Rapid Results!",
+      "Amy F.",
+      "This app has given me an additional workout each day that incorporates flexibility, Pilates, and stretching, which I have needed for so long! The biggest change I have noticed is how much flatter my stomach is, my core is changing by the day!…. The kicker—I’ve only been using app for 1 week!",
+      "Once again",
+      "Shy B.",
+      "Once again, I absolutely love this app doing Pilates as it is helping me shed inches and pounds. I never thought I’d like doing Pilates because it isn’t high impact. It does work"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "3% Creating your Pilates Plan for Beginners Your Pilates Plan for Beginners is ready! Over 10 million people have chosen BetterMe I'm really enjoying the app Amanda I'm really enjoying the app the exercises are well demonstrated and there is enough time to go along without feeling like your rushing. I have never done pilates and was nervous about taking a class so being able to do it from home was perfect. After 1 week I have noticed a difference in my arms and legs but am hoping for some help on my stomach muscles over the next 3 weeks. Rapid Results! Amy F. This app has given me an additional workout each day that incorporates flexibility, Pilates, and stretching, which I have needed for so long! The biggest change I have noticed is how much flatter my stomach is, my core is changing by the day!…. The kicker—I’ve only been using app for 1 week! Once again Shy B. Once again, I absolutely love this app doing Pilates as it is helping me shed inches and pounds. I never thought I’d like d"
+  },
+  {
+    "step": 36,
+    "action": "wait",
+    "reason": "loader or progress page"
+  },
+  {
+    "step": 37,
+    "actionBeforeCapture": "wait",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "loader",
+    "lines": [
+      "35%",
+      "Creating your Pilates Plan for Beginners",
+      "Your Pilates Plan for Beginners is ready!",
+      "Over 10 million people",
+      "have chosen BetterMe",
+      "I'm really enjoying the app",
+      "Amanda",
+      "I'm really enjoying the app the exercises are well demonstrated and there is enough time to go along without feeling like your rushing. I have never done pilates and was nervous about taking a class so being able to do it from home was perfect. After 1 week I have noticed a difference in my arms and legs but am hoping for some help on my stomach muscles over the next 3 weeks.",
+      "Rapid Results!",
+      "Amy F.",
+      "This app has given me an additional workout each day that incorporates flexibility, Pilates, and stretching, which I have needed for so long! The biggest change I have noticed is how much flatter my stomach is, my core is changing by the day!…. The kicker—I’ve only been using app for 1 week!",
+      "Once again",
+      "Shy B.",
+      "Once again, I absolutely love this app doing Pilates as it is helping me shed inches and pounds. I never thought I’d like doing Pilates because it isn’t high impact. It does work"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "35% Creating your Pilates Plan for Beginners Your Pilates Plan for Beginners is ready! Over 10 million people have chosen BetterMe I'm really enjoying the app Amanda I'm really enjoying the app the exercises are well demonstrated and there is enough time to go along without feeling like your rushing. I have never done pilates and was nervous about taking a class so being able to do it from home was perfect. After 1 week I have noticed a difference in my arms and legs but am hoping for some help on my stomach muscles over the next 3 weeks. Rapid Results! Amy F. This app has given me an additional workout each day that incorporates flexibility, Pilates, and stretching, which I have needed for so long! The biggest change I have noticed is how much flatter my stomach is, my core is changing by the day!…. The kicker—I’ve only been using app for 1 week! Once again Shy B. Once again, I absolutely love this app doing Pilates as it is helping me shed inches and pounds. I never thought I’d like "
+  },
+  {
+    "step": 37,
+    "action": "wait",
+    "reason": "loader or progress page"
+  },
+  {
+    "step": 38,
+    "actionBeforeCapture": "wait",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "loader",
+    "lines": [
+      "67%",
+      "Creating your Pilates Plan for Beginners",
+      "Your Pilates Plan for Beginners is ready!",
+      "Over 10 million people",
+      "have chosen BetterMe",
+      "I'm really enjoying the app",
+      "Amanda",
+      "I'm really enjoying the app the exercises are well demonstrated and there is enough time to go along without feeling like your rushing. I have never done pilates and was nervous about taking a class so being able to do it from home was perfect. After 1 week I have noticed a difference in my arms and legs but am hoping for some help on my stomach muscles over the next 3 weeks.",
+      "Rapid Results!",
+      "Amy F.",
+      "This app has given me an additional workout each day that incorporates flexibility, Pilates, and stretching, which I have needed for so long! The biggest change I have noticed is how much flatter my stomach is, my core is changing by the day!…. The kicker—I’ve only been using app for 1 week!",
+      "Once again",
+      "Shy B.",
+      "Once again, I absolutely love this app doing Pilates as it is helping me shed inches and pounds. I never thought I’d like doing Pilates because it isn’t high impact. It does work"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "67% Creating your Pilates Plan for Beginners Your Pilates Plan for Beginners is ready! Over 10 million people have chosen BetterMe I'm really enjoying the app Amanda I'm really enjoying the app the exercises are well demonstrated and there is enough time to go along without feeling like your rushing. I have never done pilates and was nervous about taking a class so being able to do it from home was perfect. After 1 week I have noticed a difference in my arms and legs but am hoping for some help on my stomach muscles over the next 3 weeks. Rapid Results! Amy F. This app has given me an additional workout each day that incorporates flexibility, Pilates, and stretching, which I have needed for so long! The biggest change I have noticed is how much flatter my stomach is, my core is changing by the day!…. The kicker—I’ve only been using app for 1 week! Once again Shy B. Once again, I absolutely love this app doing Pilates as it is helping me shed inches and pounds. I never thought I’d like "
+  },
+  {
+    "step": 38,
+    "action": "wait",
+    "reason": "loader or progress page"
+  },
+  {
+    "step": 39,
+    "actionBeforeCapture": "wait",
+    "url": "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+    "title": "Quiz: Which Diet and Workout Plan is Best for You? | BetterMe",
+    "stage": "loader",
+    "lines": [
+      "98%",
+      "Creating your Pilates Plan for Beginners",
+      "Your Pilates Plan for Beginners is ready!",
+      "Over 10 million people",
+      "have chosen BetterMe",
+      "I'm really enjoying the app",
+      "Amanda",
+      "I'm really enjoying the app the exercises are well demonstrated and there is enough time to go along without feeling like your rushing. I have never done pilates and was nervous about taking a class so being able to do it from home was perfect. After 1 week I have noticed a difference in my arms and legs but am hoping for some help on my stomach muscles over the next 3 weeks.",
+      "Rapid Results!",
+      "Amy F.",
+      "This app has given me an additional workout each day that incorporates flexibility, Pilates, and stretching, which I have needed for so long! The biggest change I have noticed is how much flatter my stomach is, my core is changing by the day!…. The kicker—I’ve only been using app for 1 week!",
+      "Once again",
+      "Shy B.",
+      "Once again, I absolutely love this app doing Pilates as it is helping me shed inches and pounds. I never thought I’d like doing Pilates because it isn’t high impact. It does work"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/generated-questionary-brand-palette?flow=2117",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [],
+      "buttons": [
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "98% Creating your Pilates Plan for Beginners Your Pilates Plan for Beginners is ready! Over 10 million people have chosen BetterMe I'm really enjoying the app Amanda I'm really enjoying the app the exercises are well demonstrated and there is enough time to go along without feeling like your rushing. I have never done pilates and was nervous about taking a class so being able to do it from home was perfect. After 1 week I have noticed a difference in my arms and legs but am hoping for some help on my stomach muscles over the next 3 weeks. Rapid Results! Amy F. This app has given me an additional workout each day that incorporates flexibility, Pilates, and stretching, which I have needed for so long! The biggest change I have noticed is how much flatter my stomach is, my core is changing by the day!…. The kicker—I’ve only been using app for 1 week! Once again Shy B. Once again, I absolutely love this app doing Pilates as it is helping me shed inches and pounds. I never thought I’d like "
+  },
+  {
+    "step": 39,
+    "action": "wait",
+    "reason": "loader or progress page"
+  },
+  {
+    "step": 40,
+    "actionBeforeCapture": "wait",
+    "url": "https://betterme-pilates.com/email-generated-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+    "title": "Customized Diet and Workout Plan | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Enter your email to get your Pilates Plan for Beginners",
+      "We respect your privacy and are committed to protecting your personal data. Your data will be processed in accordance with our Privacy Policy.",
+      "CONTINUE"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/email-generated-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [
+        {
+          "frameUrl": "https://betterme-pilates.com/email-generated-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+          "type": "email",
+          "name": "email",
+          "placeholder": "Your email",
+          "ariaLabel": "",
+          "autocomplete": "on"
+        }
+      ],
+      "buttons": [
+        "CONTINUE",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Enter your email to get your Pilates Plan for Beginners We respect your privacy and are committed to protecting your personal data. Your data will be processed in accordance with our Privacy Policy. CONTINUE"
+  },
+  {
+    "step": 40,
+    "action": "filled inputs then continued",
+    "clicked": true,
+    "continuation": "CONTINUE",
+    "events": [
+      {
+        "type": "fill",
+        "index": 0,
+        "placeholder": "Your email",
+        "value": "qa.betterme.test@example.com"
+      }
+    ]
+  },
+  {
+    "step": 41,
+    "actionBeforeCapture": "filled inputs then continued",
+    "url": "https://betterme-pilates.com/email-generated-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+    "title": "Customized Diet and Workout Plan | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "Enter your email to get your Pilates Plan for Beginners",
+      "We respect your privacy and are committed to protecting your personal data. Your data will be processed in accordance with our Privacy Policy.",
+      "CONTINUE"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/email-generated-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [
+        {
+          "frameUrl": "https://betterme-pilates.com/email-generated-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+          "type": "email",
+          "name": "email",
+          "placeholder": "Your email",
+          "ariaLabel": "",
+          "autocomplete": "on"
+        }
+      ],
+      "buttons": [
+        "CONTINUE",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Enter your email to get your Pilates Plan for Beginners We respect your privacy and are committed to protecting your personal data. Your data will be processed in accordance with our Privacy Policy. CONTINUE"
+  },
+  {
+    "step": 41,
+    "action": "filled inputs then continued",
+    "clicked": false,
+    "continuation": "CONTINUE",
+    "events": [
+      {
+        "type": "fill",
+        "index": 0,
+        "placeholder": "Your email",
+        "value": "qa.betterme.test@example.com"
+      }
+    ]
+  },
+  {
+    "step": 42,
+    "actionBeforeCapture": "filled inputs then continued",
+    "url": "https://betterme-pilates.com/purchase-with-input-name-and-graph-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+    "title": "Graph Your Weight | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "What's your name?",
+      "CONTINUE"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/purchase-with-input-name-and-graph-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+        "about:blank",
+        "about:blank"
+      ],
+      "inputs": [
+        {
+          "frameUrl": "https://betterme-pilates.com/purchase-with-input-name-and-graph-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+          "type": "text",
+          "name": "",
+          "placeholder": "Name",
+          "ariaLabel": "",
+          "autocomplete": ""
+        }
+      ],
+      "buttons": [
+        "CONTINUE",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "What's your name? CONTINUE"
+  },
+  {
+    "step": 42,
+    "action": "filled inputs then continued",
+    "clicked": true,
+    "continuation": "CONTINUE",
+    "events": [
+      {
+        "type": "fill",
+        "index": 0,
+        "placeholder": "Name",
+        "value": "QA Tester"
+      }
+    ]
+  },
+  {
+    "step": 43,
+    "actionBeforeCapture": "filled inputs then continued",
+    "url": "https://betterme-pilates.com/purchase-with-input-name-and-graph-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+    "title": "Graph Your Weight | BetterMe",
+    "stage": "quiz",
+    "lines": [
+      "QA Tester,",
+      "your 4-week Pilates Plan for Beginners is ready!",
+      "Your Weight",
+      "Now",
+      "After 4 weeks",
+      "Week 1",
+      "Week 2",
+      "Week 3",
+      "Week 4",
+      "This chart is for illustrative purposes only",
+      "CONTINUE"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/purchase-with-input-name-and-graph-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+        "about:blank",
+        "about:blank",
+        "chrome-error://chromewebdata/"
+      ],
+      "inputs": [],
+      "buttons": [
+        "CONTINUE",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "QA Tester, your 4-week Pilates Plan for Beginners is ready! Your Weight Now After 4 weeks Week 1 Week 2 Week 3 Week 4 This chart is for illustrative purposes only CONTINUE"
+  },
+  {
+    "step": 43,
+    "action": "single",
+    "clickedTargets": [
+      {
+        "target": "CONTINUE",
+        "clicked": true
+      }
+    ]
+  },
+  {
+    "step": 44,
+    "actionBeforeCapture": "single",
+    "url": "https://betterme-pilates.com/scratch-card?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+    "title": "Checkout | BetterMe",
+    "stage": "discount",
+    "lines": [
+      "Scratch to reveal your special discount!",
+      "We want you to start your journey",
+      "with a nice surprise",
+      "30",
+      "%",
+      "discount",
+      "on your Pilates Plan for Beginners",
+      "Scratch it off",
+      "Promo code",
+      "qa_may26",
+      "Applied automatically at checkout",
+      "6"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/scratch-card?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+        "about:blank",
+        "about:blank",
+        "chrome-error://chromewebdata/"
+      ],
+      "inputs": [],
+      "buttons": [
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "Scratch to reveal your special discount! We want you to start your journey with a nice surprise 30 % discount on your Pilates Plan for Beginners Scratch it off Promo code qa_may26 Applied automatically at checkout 6"
+  },
+  {
+    "step": 44,
+    "action": "scratch",
+    "scratched": true,
+    "targets": [
+      "Scratch it off"
+    ]
+  },
+  {
+    "step": 45,
+    "actionBeforeCapture": "scratch",
+    "url": "https://betterme-pilates.com/checkout-personalized-generated-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+    "title": "Checkout | BetterMe",
+    "stage": "paywall",
+    "lines": [
+      "09:58",
+      "minutes",
+      "seconds",
+      "GET MY PLAN",
+      "Now",
+      "Your Goal",
+      "Body fat",
+      "Body fat",
+      "Dangerously High",
+      "Normal",
+      "Pilates level",
+      "Pilates level",
+      "Advanced",
+      "Advanced",
+      "Get your Pilates Plan for Beginners now!",
+      "Your promo code is applied!",
+      "qa_may26",
+      "09",
+      ":",
+      "58",
+      "minutes",
+      "seconds",
+      "1-Week Trial",
+      "4-WEEK PLAN",
+      "HK$98.00",
+      "HK$70.00",
+      "HK$14.00",
+      "HK$10.00",
+      "per day",
+      "MOST POPULAR",
+      "4-Week Plan",
+      "HK$280.00",
+      "HK$196.00",
+      "HK$10.00",
+      "HK$7.00",
+      "per day",
+      "12-Week Plan",
+      "HK$588.00",
+      "HK$420.00",
+      "HK$7.00",
+      "HK$5.00",
+      "per day",
+      "GET MY PLAN",
+      "Without cancellation, before the selected discounted intro plan ends, I accept that BetterMe will automatically charge HK$280.00 every 4 weeks until I cancel. Cancel online via the profile on the website or app.",
+      "What you get",
+      "Slim toned body: lose weight at home easily",
+      "10-20 min beginner-friendly workouts for target areas: belly, thighs, booty, whole body",
+      "Improved posture and reduced tension in back, neck, and shoulders",
+      "200 Pilates exercises for improved mobility and flexibility",
+      "Personalized step-by-step nutrition plan to reach your goal weight faster",
+      "As featured in",
+      "Results that make us proud",
+      "Eun, -5 kg",
+      "It helps you track everything you need when you want to help yourself lowering weight or keeping it, from water to food and calories and many other, adding to that the 1 to 1 conversations are supper helpful the trainings help so much it’s extremely good.",
+      "Read more",
+      "Nina, -3 kg",
+      "I am 4 months postpartum and I was stuck at the last bit of my pregnancy weight. Well I decided to try this app out and after 2 weeks of doing the workouts I started seeing results.",
+      "My waist was trimmer, mom belly was starting to go away, and my legs began to be more toned. I love doing the daily workout on my schedule in the app and then l've been incorporating yoga as well that is also on the app.",
+      "Read more",
+      "Nguyet, -6 kg",
+      "Growing up I never battled with my weight. Eating whatever I wanted without seeing any negative consequences, those bad habits led to developing bad habits. However, Those bad habits quickly caught up with me after my hysterectomy. I tried one diet after another with little to no success. BETTER ME not only has helped me form good eating habits, but they have educated me along the way. I feel empowered now! I have the tools I need to continue to reach my health and weight goals! The app is easy to use and the constant coaching is tremendously motivating. I love the challenges! The 21 day no sugar challenge combined with intermittent fasting helped me to lose 13lbs! I feel great and can’t wait to see where my weight loss journey takes me!",
+      "I have lost 13lbs! I have more energy and my inflammation is definitely less. I’m really able to control what I eat, and I plan my cheat meals.",
+      "Read more",
+      "*Disclaimer: Following exercise and a meal plan is the key in your fitness journey and greatly impacts the results. It’s unusual to lose more than 8 pounds per month. Consult a physician first.",
+      "People often ask",
+      "How can this plan help me lose weight?",
+      "Your plan includes everything you need for successful weight loss. A variety of exercises, a step-by-step nutrition plan, and expert tips: 3 elements that are vital for your success.",
+      "Is it okay that I'm not flexible?",
+      "Our plans are suitable for different skill levels. You’ll find something for yourself whether you can do a full spilt or if you can’t touch your toes!",
+      "How will the plan be delivered?",
+      "After making the purchase, you get access to a handy mobile app with your plan. Available both on iOS and Android. Everything is set up already. We are going to guide and support you through the whole process.",
+      "Users love our plans",
+      "Okunade A.",
+      "Wow this is the best workout app. I have ever used it's easy to navigate the content and the article are all good it's really help me to loss weight and I pill Up some abs in fact I recommend it to my friends they all love this applicant too. What a good job done by better me. More good work.",
+      "more",
+      "Rashmi N.",
+      "Since about a year, my stomach and chest area started to get fat, so I suffered a lot. It didn't change that the food was reduced. But this application makes a big difference. I believe that it will be a very good application to control her shape as much as I want with activities like simple exercises and proper diet that can be done from home. Thank you very much to all of you who created such an application.",
+      "more",
+      "Asif A.",
+      "Over the past few years, I’ve tried my fair share of weight loss programs. I’d lose a few pounds at first, but they’d slowly pile back on when I went off the program. Saying I was frustrated would be an understatement. At some point, I really believed I would never shed the weight. Early last year, I saw a BetterMe ad, and today I’m proud to be sharing with you how this app helped me lose weight.",
+      "more",
+      "Get visible results in 4 weeks!",
+      "Your promo code is applied!",
+      "qa_may26",
+      "09",
+      ":",
+      "58",
+      "minutes",
+      "seconds",
+      "1-Week Trial",
+      "4-WEEK PLAN",
+      "HK$98.00",
+      "HK$70.00",
+      "HK$14.00",
+      "HK$10.00",
+      "per day",
+      "MOST POPULAR",
+      "4-Week Plan",
+      "HK$280.00",
+      "HK$196.00",
+      "HK$10.00",
+      "HK$7.00",
+      "per day",
+      "12-Week Plan",
+      "HK$588.00",
+      "HK$420.00",
+      "HK$7.00",
+      "HK$5.00",
+      "per day",
+      "GET MY PLAN",
+      "Without cancellation, before the selected discounted intro plan ends, I accept that BetterMe will automatically charge HK$280.00 every 4 weeks until I cancel. Cancel online via the profile on the website or app.",
+      "30-day money-back guarantee",
+      "We believe that our plan may work for you and you’ll get visible results in 4 weeks! We even are ready to return your money back if you don’t see visible results and can demonstrate that you followed our plan.",
+      "Find more about applicable limitations in our money-back policy.",
+      "BetterMe International Limited | Office No. 101, 1st Floor, \"Afentiko Anna\" Building, Corner of Tepeleniou & Korytsas Street, 8010, Paphos, Cyprus",
+      "Privacy",
+      "Terms"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/checkout-personalized-generated-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+        "about:blank",
+        "about:blank",
+        "chrome-error://chromewebdata/"
+      ],
+      "inputs": [],
+      "buttons": [
+        "GET MY PLAN",
+        "1-Week Trial 4-WEEK PLAN HK$98.00 HK$70.00 HK$14.00 HK$10.00 per day",
+        "MOST POPULAR 4-Week Plan HK$280.00 HK$196.00 HK$10.00 HK$7.00 per day",
+        "12-Week Plan HK$588.00 HK$420.00 HK$7.00 HK$5.00 per day",
+        "Read more",
+        "more",
+        "Terms",
+        "e-Privacy Settings"
+      ]
+    },
+    "mainPreview": "09:58 minutes seconds GET MY PLAN Now Your Goal Body fat Body fat Dangerously High Normal Pilates level Pilates level Advanced Advanced Get your Pilates Plan for Beginners now! Your promo code is applied! qa_may26 09 : 58 minutes seconds 1-Week Trial 4-WEEK PLAN HK$98.00 HK$70.00 HK$14.00 HK$10.00 per day MOST POPULAR 4-Week Plan HK$280.00 HK$196.00 HK$10.00 HK$7.00 per day 12-Week Plan HK$588.00 HK$420.00 HK$7.00 HK$5.00 per day GET MY PLAN Without cancellation, before the selected discounted intro plan ends, I accept that BetterMe will automatically charge HK$280.00 every 4 weeks until I cancel. Cancel online via the profile on the website or app. What you get Slim toned body: lose weight at home easily 10-20 min beginner-friendly workouts for target areas: belly, thighs, booty, whole body Improved posture and reduced tension in back, neck, and shoulders 200 Pilates exercises for improved mobility and flexibility Personalized step-by-step nutrition plan to reach your goal weight fast"
+  },
+  {
+    "step": 45,
+    "action": "checkout probe click",
+    "target": "GET MY PLAN",
+    "clicked": true
+  },
+  {
+    "step": 46,
+    "actionBeforeCapture": "checkout probe click",
+    "url": "https://betterme-pilates.com/checkout-personalized-generated-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+    "title": "Checkout | BetterMe",
+    "stage": "paywall",
+    "lines": [
+      "09:58",
+      "minutes",
+      "seconds",
+      "GET MY PLAN",
+      "Now",
+      "Your Goal",
+      "Body fat",
+      "Body fat",
+      "Dangerously High",
+      "Normal",
+      "Pilates level",
+      "Pilates level",
+      "Advanced",
+      "Advanced",
+      "Get your Pilates Plan for Beginners now!",
+      "Your promo code is applied!",
+      "qa_may26",
+      "09",
+      ":",
+      "58",
+      "minutes",
+      "seconds",
+      "1-Week Trial",
+      "4-WEEK PLAN",
+      "HK$98.00",
+      "HK$70.00",
+      "HK$14.00",
+      "HK$10.00",
+      "per day",
+      "MOST POPULAR",
+      "4-Week Plan",
+      "HK$280.00",
+      "HK$196.00",
+      "HK$10.00",
+      "HK$7.00",
+      "per day",
+      "12-Week Plan",
+      "HK$588.00",
+      "HK$420.00",
+      "HK$7.00",
+      "HK$5.00",
+      "per day",
+      "GET MY PLAN",
+      "Without cancellation, before the selected discounted intro plan ends, I accept that BetterMe will automatically charge HK$280.00 every 4 weeks until I cancel. Cancel online via the profile on the website or app.",
+      "What you get",
+      "Slim toned body: lose weight at home easily",
+      "10-20 min beginner-friendly workouts for target areas: belly, thighs, booty, whole body",
+      "Improved posture and reduced tension in back, neck, and shoulders",
+      "200 Pilates exercises for improved mobility and flexibility",
+      "Personalized step-by-step nutrition plan to reach your goal weight faster",
+      "As featured in",
+      "Results that make us proud",
+      "Eun, -5 kg",
+      "It helps you track everything you need when you want to help yourself lowering weight or keeping it, from water to food and calories and many other, adding to that the 1 to 1 conversations are supper helpful the trainings help so much it’s extremely good.",
+      "Read more",
+      "Nina, -3 kg",
+      "I am 4 months postpartum and I was stuck at the last bit of my pregnancy weight. Well I decided to try this app out and after 2 weeks of doing the workouts I started seeing results.",
+      "My waist was trimmer, mom belly was starting to go away, and my legs began to be more toned. I love doing the daily workout on my schedule in the app and then l've been incorporating yoga as well that is also on the app.",
+      "Read more",
+      "Nguyet, -6 kg",
+      "Growing up I never battled with my weight. Eating whatever I wanted without seeing any negative consequences, those bad habits led to developing bad habits. However, Those bad habits quickly caught up with me after my hysterectomy. I tried one diet after another with little to no success. BETTER ME not only has helped me form good eating habits, but they have educated me along the way. I feel empowered now! I have the tools I need to continue to reach my health and weight goals! The app is easy to use and the constant coaching is tremendously motivating. I love the challenges! The 21 day no sugar challenge combined with intermittent fasting helped me to lose 13lbs! I feel great and can’t wait to see where my weight loss journey takes me!",
+      "I have lost 13lbs! I have more energy and my inflammation is definitely less. I’m really able to control what I eat, and I plan my cheat meals.",
+      "Read more",
+      "*Disclaimer: Following exercise and a meal plan is the key in your fitness journey and greatly impacts the results. It’s unusual to lose more than 8 pounds per month. Consult a physician first.",
+      "People often ask",
+      "How can this plan help me lose weight?",
+      "Your plan includes everything you need for successful weight loss. A variety of exercises, a step-by-step nutrition plan, and expert tips: 3 elements that are vital for your success.",
+      "Is it okay that I'm not flexible?",
+      "Our plans are suitable for different skill levels. You’ll find something for yourself whether you can do a full spilt or if you can’t touch your toes!",
+      "How will the plan be delivered?",
+      "After making the purchase, you get access to a handy mobile app with your plan. Available both on iOS and Android. Everything is set up already. We are going to guide and support you through the whole process.",
+      "Users love our plans",
+      "Okunade A.",
+      "Wow this is the best workout app. I have ever used it's easy to navigate the content and the article are all good it's really help me to loss weight and I pill Up some abs in fact I recommend it to my friends they all love this applicant too. What a good job done by better me. More good work.",
+      "more",
+      "Rashmi N.",
+      "Since about a year, my stomach and chest area started to get fat, so I suffered a lot. It didn't change that the food was reduced. But this application makes a big difference. I believe that it will be a very good application to control her shape as much as I want with activities like simple exercises and proper diet that can be done from home. Thank you very much to all of you who created such an application.",
+      "more",
+      "Asif A.",
+      "Over the past few years, I’ve tried my fair share of weight loss programs. I’d lose a few pounds at first, but they’d slowly pile back on when I went off the program. Saying I was frustrated would be an understatement. At some point, I really believed I would never shed the weight. Early last year, I saw a BetterMe ad, and today I’m proud to be sharing with you how this app helped me lose weight.",
+      "more",
+      "Get visible results in 4 weeks!",
+      "Your promo code is applied!",
+      "qa_may26",
+      "09",
+      ":",
+      "58",
+      "minutes",
+      "seconds",
+      "1-Week Trial",
+      "4-WEEK PLAN",
+      "HK$98.00",
+      "HK$70.00",
+      "HK$14.00",
+      "HK$10.00",
+      "per day",
+      "MOST POPULAR",
+      "4-Week Plan",
+      "HK$280.00",
+      "HK$196.00",
+      "HK$10.00",
+      "HK$7.00",
+      "per day",
+      "12-Week Plan",
+      "HK$588.00",
+      "HK$420.00",
+      "HK$7.00",
+      "HK$5.00",
+      "per day",
+      "GET MY PLAN",
+      "Without cancellation, before the selected discounted intro plan ends, I accept that BetterMe will automatically charge HK$280.00 every 4 weeks until I cancel. Cancel online via the profile on the website or app.",
+      "30-day money-back guarantee",
+      "We believe that our plan may work for you and you’ll get visible results in 4 weeks! We even are ready to return your money back if you don’t see visible results and can demonstrate that you followed our plan.",
+      "Find more about applicable limitations in our money-back policy.",
+      "BetterMe International Limited | Office No. 101, 1st Floor, \"Afentiko Anna\" Building, Corner of Tepeleniou & Korytsas Street, 8010, Paphos, Cyprus",
+      "Privacy",
+      "Terms"
+    ],
+    "paymentSurface": {
+      "frameUrls": [
+        "https://betterme-pilates.com/checkout-personalized-generated-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+        "about:blank",
+        "about:blank",
+        "chrome-error://chromewebdata/",
+        "https://eu1-htp.tokenex.com/iframe/v3?AuthenticationKey=wRMg5UPS5XIJyAvKK3m1mT5tqvE3xLVzOHyq7FN3Jyk%3D&Origin=https%3A%2F%2Fbetterme-pilates.com&TokenExID=5144949960701316&Timestamp=20260524032900&Container=tokenExIframe&Mode=Data&PCI=true&EnforceLuhnCompliance=true&CvvContainer=tokenExCvvIframe&CVV=true&TokenScheme=PCI&ExpiresInSeconds=1200&Use3ds=true&ThreeDSMethodNotificationUrl=https://api.betterme-pilates.com/api/v2/orders/tokenex/3ds/hooks/fingerprint&ReturnAutoCompleteValues=true",
+        "https://eu1-htp.tokenex.com/iframe/v3?AuthenticationKey=wRMg5UPS5XIJyAvKK3m1mT5tqvE3xLVzOHyq7FN3Jyk%3D&Origin=https%3A%2F%2Fbetterme-pilates.com&TokenExID=5144949960701316&Timestamp=20260524032900&Container=tokenExIframe&Mode=CVV&PCI=true&EnforceLuhnCompliance=true&CvvContainer=tokenExCvvIframe&CVV=true&TokenScheme=PCI&ExpiresInSeconds=1200&Use3ds=true&ThreeDSMethodNotificationUrl=https://api.betterme-pilates.com/api/v2/orders/tokenex/3ds/hooks/fingerprint&ReturnAutoCompleteValues=true"
+      ],
+      "inputs": [
+        {
+          "frameUrl": "https://betterme-pilates.com/checkout-personalized-generated-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22",
+          "type": "",
+          "name": "expirationDate",
+          "placeholder": "MM/YY",
+          "ariaLabel": "",
+          "autocomplete": "cc-exp"
+        },
+        {
+          "frameUrl": "https://eu1-htp.tokenex.com/iframe/v3?AuthenticationKey=wRMg5UPS5XIJyAvKK3m1mT5tqvE3xLVzOHyq7FN3Jyk%3D&Origin=https%3A%2F%2Fbetterme-pilates.com&TokenExID=5144949960701316&Timestamp=20260524032900&Container=tokenExIframe&Mode=Data&PCI=true&EnforceLuhnCompliance=true&CvvContainer=tokenExCvvIframe&CVV=true&TokenScheme=PCI&ExpiresInSeconds=1200&Use3ds=true&ThreeDSMethodNotificationUrl=https://api.betterme-pilates.com/api/v2/orders/tokenex/3ds/hooks/fingerprint&ReturnAutoCompleteValues=true",
+          "type": "text",
+          "name": "cc-name",
+          "placeholder": "",
+          "ariaLabel": "",
+          "autocomplete": "cc-name"
+        },
+        {
+          "frameUrl": "https://eu1-htp.tokenex.com/iframe/v3?AuthenticationKey=wRMg5UPS5XIJyAvKK3m1mT5tqvE3xLVzOHyq7FN3Jyk%3D&Origin=https%3A%2F%2Fbetterme-pilates.com&TokenExID=5144949960701316&Timestamp=20260524032900&Container=tokenExIframe&Mode=Data&PCI=true&EnforceLuhnCompliance=true&CvvContainer=tokenExCvvIframe&CVV=true&TokenScheme=PCI&ExpiresInSeconds=1200&Use3ds=true&ThreeDSMethodNotificationUrl=https://api.betterme-pilates.com/api/v2/orders/tokenex/3ds/hooks/fingerprint&ReturnAutoCompleteValues=true",
+          "type": "text",
+          "name": "cc-exp",
+          "placeholder": "",
+          "ariaLabel": "",
+          "autocomplete": "cc-exp"
+        },
+        {
+          "frameUrl": "https://eu1-htp.tokenex.com/iframe/v3?AuthenticationKey=wRMg5UPS5XIJyAvKK3m1mT5tqvE3xLVzOHyq7FN3Jyk%3D&Origin=https%3A%2F%2Fbetterme-pilates.com&TokenExID=5144949960701316&Timestamp=20260524032900&Container=tokenExIframe&Mode=Data&PCI=true&EnforceLuhnCompliance=true&CvvContainer=tokenExCvvIframe&CVV=true&TokenScheme=PCI&ExpiresInSeconds=1200&Use3ds=true&ThreeDSMethodNotificationUrl=https://api.betterme-pilates.com/api/v2/orders/tokenex/3ds/hooks/fingerprint&ReturnAutoCompleteValues=true",
+          "type": "text",
+          "name": "cardNumber",
+          "placeholder": "XXXX XXXX XXXX XXXX",
+          "ariaLabel": "",
+          "autocomplete": "cc-number"
+        },
+        {
+          "frameUrl": "https://eu1-htp.tokenex.com/iframe/v3?AuthenticationKey=wRMg5UPS5XIJyAvKK3m1mT5tqvE3xLVzOHyq7FN3Jyk%3D&Origin=https%3A%2F%2Fbetterme-pilates.com&TokenExID=5144949960701316&Timestamp=20260524032900&Container=tokenExIframe&Mode=CVV&PCI=true&EnforceLuhnCompliance=true&CvvContainer=tokenExCvvIframe&CVV=true&TokenScheme=PCI&ExpiresInSeconds=1200&Use3ds=true&ThreeDSMethodNotificationUrl=https://api.betterme-pilates.com/api/v2/orders/tokenex/3ds/hooks/fingerprint&ReturnAutoCompleteValues=true",
+          "type": "tel",
+          "name": "Data",
+          "placeholder": "CVV",
+          "ariaLabel": "",
+          "autocomplete": "cc-csc"
+        }
+      ],
+      "buttons": [
+        "GET MY PLAN",
+        "1-Week Trial 4-WEEK PLAN HK$98.00 HK$70.00 HK$14.00 HK$10.00 per day",
+        "MOST POPULAR 4-Week Plan HK$280.00 HK$196.00 HK$10.00 HK$7.00 per day",
+        "12-Week Plan HK$588.00 HK$420.00 HK$7.00 HK$5.00 per day",
+        "Read more",
+        "more",
+        "Terms",
+        "e-Privacy Settings",
+        "Fast payment",
+        "Credit card Card number Expiry date Security code CONTINUE",
+        "CONTINUE"
+      ]
+    },
+    "mainPreview": "09:58 minutes seconds GET MY PLAN Now Your Goal Body fat Body fat Dangerously High Normal Pilates level Pilates level Advanced Advanced Get your Pilates Plan for Beginners now! Your promo code is applied! qa_may26 09 : 58 minutes seconds 1-Week Trial 4-WEEK PLAN HK$98.00 HK$70.00 HK$14.00 HK$10.00 per day MOST POPULAR 4-Week Plan HK$280.00 HK$196.00 HK$10.00 HK$7.00 per day 12-Week Plan HK$588.00 HK$420.00 HK$7.00 HK$5.00 per day GET MY PLAN Without cancellation, before the selected discounted intro plan ends, I accept that BetterMe will automatically charge HK$280.00 every 4 weeks until I cancel. Cancel online via the profile on the website or app. What you get Slim toned body: lose weight at home easily 10-20 min beginner-friendly workouts for target areas: belly, thighs, booty, whole body Improved posture and reduced tension in back, neck, and shoulders 200 Pilates exercises for improved mobility and flexibility Personalized step-by-step nutrition plan to reach your goal weight fast"
+  },
+  {
+    "step": 46,
+    "action": "STOP",
+    "reason": "reached paywall or checkout safety boundary"
+  }
+]

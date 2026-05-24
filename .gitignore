@@ -1,0 +1,17 @@
+node_modules/
+npm-debug.log*
+
+.worktrees/
+worktrees/
+
+exploration/betterme-flow*/
+exploration/betterme-initial/
+exploration/runs/*
+!exploration/runs/2026-05-24-112646/
+!exploration/runs/2026-05-24-112646/**
+
+.DS_Store
+Thumbs.db
+
+*.tmp
+*.log

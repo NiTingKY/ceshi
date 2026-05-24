@@ -1,0 +1,98 @@
+# BetterMe Exploration Summary
+
+- Stop reason: reached paywall or checkout safety boundary
+- Pages captured: 46
+
+## Page Sequence
+
+- Step 1: PILATES FOR BEGINNERS
+  - Visible choices/text: SELECT YOUR AGE TO START | 1-MINUTE QUIZ | Age: 18-29 | Age: 30-39 | Age: 40-49 | Age: 50+ | By choosing your age and continuing you agree to our Terms of Service | Privacy Policy
+- Step 2: Over 10 million people
+  - Visible choices/text: have chosen BetterMe | CONTINUE
+- Step 3: What is your main goal?
+  - Visible choices/text: Lose weight | Increase muscle strength | Develop flexibility | Reduce stress & worry | Improve posture
+- Step 4: How would you describe your physical build?
+  - Visible choices/text: Slim | Mid-sized | Plus-sized | Significantly overweight
+- Step 5: What is your “dream body”?
+  - Visible choices/text: Thin | Toned | Curvy | Average
+- Step 6: How does your weight typically change?
+  - Visible choices/text: I struggle to gain weight or muscle | I gain and lose weight easily | I gain weight fast but lose it slowly
+- Step 7: Tired of lengthy, ineffective workouts? Restrictive diets leave you frustrated?
+  - Visible choices/text: Our Pilates Plan for Beginners will help you achieve that lean and toned look in just 15-20 min a day. | CONTINUE
+- Step 8: How long ago were you in the best shape of your life?
+  - Visible choices/text: Less than a year ago | 1 to 2 years ago | More than 3 years ago | Never
+- Step 9: Have you tried Pilates workouts before?
+  - Visible choices/text: I'm just starting out | I have some experience | I am proficient
+- Step 10: What are your target zones?
+  - Visible choices/text: Choose all that apply | Belly | Butt | Legs | Chest | NEXT STEP
+- Step 11: Burn belly fat and tone your whole body
+  - Visible choices/text: Trim your waist, slim down thighs, tone your booty, chest, arms and legs. | Experience a full-body transformation at home! | CONTINUE
+- Step 12: How flexible are you?
+  - Visible choices/text: Pretty flexible | Just getting started | Not that good | Not sure
+- Step 13: Do you lose breath when taking the stairs?
+  - Visible choices/text: I'm so out of breath I can't talk | I'm slightly out of breath but can talk | I'm OK after one flight of stairs | I can handle a few flights of stairs
+- Step 14: Do you struggle with any of the following?
+  - Visible choices/text: Choose all that apply | Sensitive back | Sensitive knees | None of the above | NEXT STEP
+- Step 15: Relieve body tension after a long day
+  - Visible choices/text: Do gentle yet effective Pilates exercises and stretches to alleviate tension in your back, neck, and shoulders, while also supporting knee mobility. | CONTINUE
+- Step 16: How often do you exercise?
+  - Visible choices/text: Almost every day | Several times per week | Several times per month | Never
+- Step 17: How often do you go for walks?
+  - Visible choices/text: Almost every day | 3-4 times per week | 1-2 times per week | More like once a month
+- Step 18: What is your work schedule like?
+  - Visible choices/text: 9 to 5 | Night shifts | My hours are flexible | I'm retired/not working right now
+- Step 19: How would you describe your typical day?
+  - Visible choices/text: I spend most of the day sitting | I take active breaks | I’m on my feet all day long
+- Step 20: How are your energy levels during the day?
+  - Visible choices/text: High and steady | Dragging before meals | Post lunch slump | Low, I feel tired throughout the day
+- Step 21: How much water do you drink daily?
+  - Visible choices/text: I only have coffee or tea | About 2 glasses (16 oz) | 2 to 6 glasses (16-48 oz) | More than 6 glasses
+- Step 22: How much sleep do you usually get?
+  - Visible choices/text: Less than 5 hours | 5-6 hours | 7-8 hours | More than 8 hours
+- Step 23: When do you usually have breakfast?
+  - Visible choices/text: Between 6 and 8 am | Between 8 and 10 am | Between 10 am and noon | I usually skip breakfast
+- Step 24: How about lunch?
+  - Visible choices/text: Between 10 am and noon | Between noon and 2 pm | Between 2 and 4 pm | I usually skip lunch
+- Step 25: What time do you have dinner?
+  - Visible choices/text: Between 4 and 6 pm | Between 6 and 8 pm | Between 8 and 10 pm | I usually skip dinner
+- Step 26: What type of diet do you prefer?
+  - Visible choices/text: WITH MEAT | Traditional | I enjoy everything | Keto | I prefer high-fat low-carb meals | Paleo | I don't eat processed foods
+- Step 27: Do you have any of the following bad habits?
+  - Visible choices/text: Choose all that apply | I eat late at night | I can't quit sugar | I can't live without soda | I eat too much salt | None of the above | NEXT STEP
+- Step 28: Have any of the following life events led to weight gain in the last few years?
+  - Visible choices/text: Choose all that apply | Marriage or relationship | Busy work or family life | Financial struggles | High stress or worry | Slower metabolism due to aging | None of the above
+- Step 29: How tall are you?
+  - Visible choices/text: ft | cm | cm | Please, enter a value from 90 cm to 243 cm | I consent to BetterMe processing my health onboarding data to provide services and enhance my user experience. Privacy Policy. | NEXT STEP | NEXT STEP
+- Step 30: How tall are you?
+  - Visible choices/text: ft | cm | cm | I consent to BetterMe processing my health onboarding data to provide services and enhance my user experience. Privacy Policy. | NEXT STEP | NEXT STEP
+- Step 31: What’s your current weight?
+  - Visible choices/text: lbs | kg | kg | Your BMI is 59 which is considered obese | There's a lot you could gain by losing a little weight. We’ll use your BMI to create the weight loss program you need. | NEXT STEP | NEXT STEP
+- Step 32: Got it! And what's your goal weight?
+  - Visible choices/text: lbs | kg | kg | It’s worth it: lose 64% of your weight | The Mayo Clinic conducted a study which found that overweight people who lose 20% or more of their body weight are more than twice as likely to show improved metabolic health as those who only lose 5-10%. | NEXT STEP | NEXT STEP
+- Step 33: Here’s your wellness profile
+  - Visible choices/text: Body Mass Index (BMI) | You - 58.82 | 15 | 18.5 | 25 | 30 | 40
+- Step 34: Do you have an important event coming up?
+  - Visible choices/text: Having something to look forward to can be a great motivator for reaching your goal | Vacation | Wedding | Holiday | Sporting event | Reunion | Birthday
+- Step 35: When is your event?
+  - Visible choices/text: Select Date | September 2026 | Su | Mo | Tu | We | Th
+- Step 36: 3%
+  - Visible choices/text: Creating your Pilates Plan for Beginners | Your Pilates Plan for Beginners is ready! | Over 10 million people | have chosen BetterMe | I'm really enjoying the app | Amanda | I'm really enjoying the app the exercises are well demonstrated and there is enough time to go along without feeling like your rushing. I have never done pilates and was nervous about taking a class so being able to do it from home was perfect. After 1 week I have noticed a difference in my arms and legs but am hoping for some help on my stomach muscles over the next 3 weeks.
+- Step 37: 35%
+  - Visible choices/text: Creating your Pilates Plan for Beginners | Your Pilates Plan for Beginners is ready! | Over 10 million people | have chosen BetterMe | I'm really enjoying the app | Amanda | I'm really enjoying the app the exercises are well demonstrated and there is enough time to go along without feeling like your rushing. I have never done pilates and was nervous about taking a class so being able to do it from home was perfect. After 1 week I have noticed a difference in my arms and legs but am hoping for some help on my stomach muscles over the next 3 weeks.
+- Step 38: 67%
+  - Visible choices/text: Creating your Pilates Plan for Beginners | Your Pilates Plan for Beginners is ready! | Over 10 million people | have chosen BetterMe | I'm really enjoying the app | Amanda | I'm really enjoying the app the exercises are well demonstrated and there is enough time to go along without feeling like your rushing. I have never done pilates and was nervous about taking a class so being able to do it from home was perfect. After 1 week I have noticed a difference in my arms and legs but am hoping for some help on my stomach muscles over the next 3 weeks.
+- Step 39: 98%
+  - Visible choices/text: Creating your Pilates Plan for Beginners | Your Pilates Plan for Beginners is ready! | Over 10 million people | have chosen BetterMe | I'm really enjoying the app | Amanda | I'm really enjoying the app the exercises are well demonstrated and there is enough time to go along without feeling like your rushing. I have never done pilates and was nervous about taking a class so being able to do it from home was perfect. After 1 week I have noticed a difference in my arms and legs but am hoping for some help on my stomach muscles over the next 3 weeks.
+- Step 40: Enter your email to get your Pilates Plan for Beginners
+  - Visible choices/text: We respect your privacy and are committed to protecting your personal data. Your data will be processed in accordance with our Privacy Policy. | CONTINUE
+- Step 41: Enter your email to get your Pilates Plan for Beginners
+  - Visible choices/text: We respect your privacy and are committed to protecting your personal data. Your data will be processed in accordance with our Privacy Policy. | CONTINUE
+- Step 42: What's your name?
+- Step 43: QA Tester,
+  - Visible choices/text: your 4-week Pilates Plan for Beginners is ready! | Your Weight | Now | After 4 weeks | Week 1 | Week 2 | Week 3
+- Step 44: Scratch to reveal your special discount!
+  - Visible choices/text: We want you to start your journey | with a nice surprise | 30 | % | discount | on your Pilates Plan for Beginners | Scratch it off
+- Step 45: How can this plan help me lose weight?
+  - Visible choices/text: minutes | seconds | GET MY PLAN | Now | Your Goal | Body fat | Body fat
+- Step 46: How can this plan help me lose weight?
+  - Visible choices/text: minutes | seconds | GET MY PLAN | Now | Your Goal | Body fat | Body fat

@@ -1,0 +1,20 @@
+{
+  "name": "betterme-pilates-ai-native-qa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "QA design and script-assisted testing workflow for the BetterMe Pilates funnel.",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test pipeline/tests/*.test.js",
+    "test:helpers": "node --test pipeline/tests/explore-helpers.test.js",
+    "test:browser-actions": "node --test pipeline/tests/browser-actions.test.js",
+    "test:case-generator": "node --test pipeline/tests/case-generator.test.js",
+    "test:final-case-builder": "node --test pipeline/tests/final-case-builder.test.js",
+    "explore": "node pipeline/explore_betterme.js",
+    "generate:cases": "node pipeline/case-generator.js exploration/runs/2026-05-24-112646 generated/2026-05-24-112646-cases",
+    "build:final": "node pipeline/final-case-builder.js docs/test-cases-v1.csv generated/2026-05-24-112646-cases/generated-test-cases.csv docs/test-cases-final.csv docs/test-cases-final.json"
+  },
+  "devDependencies": {
+    "playwright": "1.60.0"
+  }
+}
