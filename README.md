@@ -14,6 +14,7 @@ The work focuses on test design quality, repeatable AI/script efficiency, safe p
 | --- | --- |
 | Final test case set | `docs/test-cases-final.csv` |
 | Final case set as JSON | `docs/test-cases-final.json` |
+| Assignment alignment matrix | `docs/assignment-alignment.md` |
 | Reviewer guide mapped to assignment scoring | `docs/final-review-guide.md` |
 | Full artifact map | `docs/project-artifacts.md` |
 | Incremental delivery narrative | `docs/incremental-delivery-log.md` |
@@ -22,8 +23,10 @@ The work focuses on test design quality, repeatable AI/script efficiency, safe p
 | Risk register | `docs/risk-register.md` |
 | Checkout safety record | `docs/checkout-safe-probe.md` |
 | AI/script workflow | `docs/ai-generation-workflow.md` |
+| LLM refinement dry-run | `docs/llm-refinement-record.md` |
+| Branch coverage expansion plan | `docs/branch-coverage-plan.md` |
 | Submission checklist | `docs/submission-checklist.md` |
-| 5-minute demo walkthrough | `docs/demo-walkthrough.md` |
+| Demo walkthrough | `docs/demo-walkthrough.md` |
 
 ## Current Deliverables
 
@@ -114,8 +117,9 @@ AI workflow documentation:
 
 - `docs/ai-generation-workflow.md`
 - `prompts/case-generation-v1.md`
+- `docs/llm-refinement-record.md`
 
-The current implementation uses a deterministic script layer and includes a prompt scaffold for later LLM refinement. This keeps the work auditable and repeatable.
+The current implementation uses a deterministic script layer and includes a prompt scaffold plus a documented LLM refinement dry-run. This keeps the work auditable and repeatable while avoiding unsupported claims about live model execution.
 
 ## How to Verify
 

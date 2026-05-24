@@ -13,6 +13,8 @@ const BAD_TEXT_TOKENS = [
   ["4000", " 0000", " 0000", " 0002"].join(""),
 ];
 const BAD_TEXT_SIGNAL = new RegExp(BAD_TEXT_TOKENS.map(escapeRegExp).join("|"));
+const FINAL_CASE_PATH = path.join("docs", "test-cases-final.csv");
+const RISK_REGISTER_PATH = path.join("docs", "risk-register.md");
 
 function escapeRegExp(value) {
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -62,6 +64,121 @@ function resolveProjectRef(ref, sourceFile, rootDir) {
   return path.join(path.dirname(sourceFile), ref);
 }
 
+function parseCsv(csvText) {
+  const rows = [];
+  let row = [];
+  let cell = "";
+  let inQuotes = false;
+
+  for (let index = 0; index < csvText.length; index += 1) {
+    const char = csvText[index];
+    const next = csvText[index + 1];
+
+    if (char === '"' && inQuotes && next === '"') {
+      cell += '"';
+      index += 1;
+      continue;
+    }
+    if (char === '"') {
+      inQuotes = !inQuotes;
+      continue;
+    }
+    if (char === "," && !inQuotes) {
+      row.push(cell);
+      cell = "";
+      continue;
+    }
+    if ((char === "\n" || char === "\r") && !inQuotes) {
+      if (char === "\r" && next === "\n") index += 1;
+      row.push(cell);
+      if (row.some((value) => value !== "")) rows.push(row);
+      row = [];
+      cell = "";
+      continue;
+    }
+    cell += char;
+  }
+
+  if (cell || row.length) {
+    row.push(cell);
+    if (row.some((value) => value !== "")) rows.push(row);
+  }
+
+  const [headers, ...dataRows] = rows;
+  if (!headers) return [];
+  return dataRows.map((dataRow) => Object.fromEntries(headers.map((header, index) => [header, dataRow[index] || ""])));
+}
+
+function extractRiskIds(markdownText) {
+  return new Set([...String(markdownText || "").matchAll(/\|\s*(R-\d{3})\s*\|/g)].map((match) => match[1]));
+}
+
+function splitList(value) {
+  return String(value || "")
+    .split(";")
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function hasUnsafeCheckoutInstruction(testCase) {
+  const text = [
+    testCase.module,
+    testCase.title,
+    testCase.precondition,
+    testCase.steps,
+    testCase.expected,
+  ].filter(Boolean).join(" ");
+
+  if (!/checkout|payment|card|cvv|cvc/i.test(text)) return false;
+  return /(submit payment|payment succeeds|enter card details|enter real card|type card|input card)/i.test(text);
+}
+
+function auditFinalCases(rootDir, issues) {
+  const finalCasePath = path.join(rootDir, FINAL_CASE_PATH);
+  const riskRegisterPath = path.join(rootDir, RISK_REGISTER_PATH);
+  if (!fs.existsSync(finalCasePath)) return;
+
+  const cases = parseCsv(fs.readFileSync(finalCasePath, "utf8"));
+  if (cases.length !== 75) {
+    issues.push({ type: "final-case-count", file: finalCasePath, count: cases.length, expected: 75 });
+  }
+
+  const riskIds = fs.existsSync(riskRegisterPath)
+    ? extractRiskIds(fs.readFileSync(riskRegisterPath, "utf8"))
+    : new Set();
+
+  cases.forEach((testCase, index) => {
+    const rowNumber = index + 2;
+    const riskRefs = splitList(testCase.riskRefs);
+    const evidenceRefs = splitList(testCase.evidence);
+
+    if (!riskRefs.length) {
+      issues.push({ type: "final-case-missing-risk", file: finalCasePath, row: rowNumber, id: testCase.id });
+    }
+
+    for (const riskRef of riskRefs) {
+      if (!riskIds.has(riskRef)) {
+        issues.push({ type: "final-case-unknown-risk", file: finalCasePath, row: rowNumber, id: testCase.id, riskRef });
+      }
+    }
+
+    if (!evidenceRefs.length) {
+      issues.push({ type: "final-case-missing-evidence", file: finalCasePath, row: rowNumber, id: testCase.id });
+    }
+
+    for (const evidenceRef of evidenceRefs) {
+      const resolved = resolveProjectRef(evidenceRef, finalCasePath, rootDir);
+      if (!fs.existsSync(resolved)) {
+        issues.push({ type: "final-case-missing-evidence-file", file: finalCasePath, row: rowNumber, id: testCase.id, evidenceRef, resolved });
+      }
+    }
+
+    if (hasUnsafeCheckoutInstruction(testCase)) {
+      issues.push({ type: "checkout-safety-boundary", file: finalCasePath, row: rowNumber, id: testCase.id });
+    }
+  });
+}
+
 function auditProject(rootDir = process.cwd()) {
   const issues = [];
   const files = walkFiles(rootDir);
@@ -83,6 +200,8 @@ function auditProject(rootDir = process.cwd()) {
     }
   }
 
+  auditFinalCases(rootDir, issues);
+
   return issues;
 }
 
@@ -96,9 +215,13 @@ if (require.main === module) {
 }
 
 module.exports = {
+  auditFinalCases,
   auditProject,
   extractMarkdownRefs,
+  extractRiskIds,
   hasBadTextSignal,
+  hasUnsafeCheckoutInstruction,
+  parseCsv,
   resolveProjectRef,
   shouldIgnoreRef,
 };

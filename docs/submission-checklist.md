@@ -13,6 +13,9 @@ Use this checklist before packaging or presenting the BetterMe AI Native QA assi
 - [x] Risk register is documented: `docs/risk-register.md`
 - [x] Checkout safe probe is documented: `docs/checkout-safe-probe.md`
 - [x] AI/script workflow is documented: `docs/ai-generation-workflow.md`
+- [x] Assignment alignment matrix is documented: `docs/assignment-alignment.md`
+- [x] LLM refinement dry-run is documented: `docs/llm-refinement-record.md`
+- [x] Branch coverage expansion plan is documented: `docs/branch-coverage-plan.md`
 - [x] Artifact map is documented: `docs/project-artifacts.md`
 - [x] Incremental delivery log is documented: `docs/incremental-delivery-log.md`
 - [x] Final review guide is documented: `docs/final-review-guide.md`
@@ -60,9 +63,15 @@ Expected latest verification:
 - `pipeline/tests/case-generator.test.js`: 4/4 pass
 - `pipeline/tests/final-case-builder.test.js`: 5/5 pass
 - `pipeline/tests/runtime.test.js`: 3/3 pass
-- `pipeline/tests/project-audit.test.js`: 4/4 pass
-- full `npm test`: 39/39 pass
+- `pipeline/tests/project-audit.test.js`: 5/5 pass
+- full `npm test`: 40/40 pass
 - `npm run audit`: 0 issues
+
+Remote repository snapshot:
+
+- Remote: `https://github.com/NiTingKY/ceshi.git`
+- Branch: `codex/remediate-project-issues`
+- Latest reviewed commit: `35ddb57 Add project audit and portable runtime`
 
 Check final case integrity:
 
@@ -110,6 +119,8 @@ Optional supporting folders:
 ## Known Gaps to Disclose
 
 - LLM refinement is scaffolded but not executed against a real model.
+- LLM refinement dry-run is documented for review rules and expected output shape.
 - Declined-card testing is intentionally not implemented yet.
 - Deep exploration covers one main user profile path.
+- Branch expansion is planned in `docs/branch-coverage-plan.md`.
 - Cross-region price and localization comparison is not covered.

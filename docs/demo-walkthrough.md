@@ -2,7 +2,33 @@
 
 Updated: 2026-05-24
 
-This is a suggested 5-minute walkthrough for presenting the project.
+This is a suggested walkthrough for presenting the project.
+
+## 1-Minute Version
+
+Say:
+
+> This repository is a BetterMe Pilates AI Native QA delivery package. The final output is 75 traceable test cases, a 40-risk register, Playwright-based funnel evidence, a safe checkout probe, and a repeatable script layer that generates draft cases from captured run logs.
+
+Open:
+
+- `README.md`
+- `docs/assignment-alignment.md`
+- `docs/test-cases-final.csv`
+
+Close with:
+
+> The main boundary is explicit: checkout was inspected safely without real card entry or payment submission, and LLM refinement is documented as a dry-run rather than overclaimed as a live model result.
+
+## 3-Minute Version
+
+1. Open `docs/assignment-alignment.md` and show the requirement-to-artifact mapping.
+2. Open `docs/test-cases-final.csv` and show 75 cases with `riskRefs` and `evidence`.
+3. Open `docs/risk-register.md` and show the 40 risk IDs.
+4. Open `docs/checkout-safe-probe.md` and explain the safety boundary.
+5. Open `docs/llm-refinement-record.md` and explain how LLM output would be reviewed before merging.
+
+## 5-Minute Version
 
 ## 0:00 - 0:30 Opening
 
@@ -13,10 +39,12 @@ Say:
 Open:
 
 - `README.md`
+- `docs/assignment-alignment.md`
 
 Point out:
 
 - final test case set
+- assignment alignment matrix
 - risk register
 - checkout safety record
 - AI/script workflow
@@ -79,19 +107,20 @@ Point out:
 Open:
 
 - `docs/ai-generation-workflow.md`
+- `docs/llm-refinement-record.md`
 - `pipeline/case-generator.js`
 - `pipeline/final-case-builder.js`
 - `generated/2026-05-24-112646-cases/generated-test-cases.csv`
 
 Say:
 
-> Instead of only asking AI to write cases manually, I built a repeatable script layer. It parses `exploration/runs/2026-05-24-112646/flow-log.json`, classifies pages, generates draft cases, and then merges them with manually reviewed cases while adding risk and evidence traceability.
+> Instead of only asking AI to write cases manually, I built a repeatable script layer. It parses `exploration/runs/2026-05-24-112646/flow-log.json`, classifies pages, generates draft cases, and then merges them with manually reviewed cases while adding risk and evidence traceability. I also documented an LLM refinement dry-run so model output has review rules before it can change the final cases.
 
 Point out:
 
 - generated 51 script-derived cases
 - final merged 75 cases
-- prompt v1 exists for future LLM refinement
+- prompt v1 and dry-run review rules exist for future LLM refinement
 
 ## 4:00 - 4:40 Incremental Process
 

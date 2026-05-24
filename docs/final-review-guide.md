@@ -13,6 +13,7 @@ Primary artifact:
 Supporting artifacts:
 
 - `docs/test-cases-final.json`
+- `docs/assignment-alignment.md`
 - `docs/page-taxonomy.md`
 - `docs/risk-register.md`
 - `docs/funnel-observation.md`
@@ -41,6 +42,7 @@ Primary artifacts:
 - `pipeline/case-generator.js`
 - `pipeline/final-case-builder.js`
 - `docs/ai-generation-workflow.md`
+- `docs/llm-refinement-record.md`
 - `prompts/case-generation-v1.md`
 
 Generated outputs:
@@ -52,13 +54,14 @@ Generated outputs:
 What this demonstrates:
 
 - Test case drafts are generated from structured run logs, not manually copied from ad hoc AI chat.
-- The workflow has a deterministic script layer and a planned LLM refinement slot.
+- The workflow has a deterministic script layer and a documented LLM refinement dry-run.
 - The final case builder adds risk and evidence traceability.
 
 Verification:
 
 - `pipeline/tests/case-generator.test.js`
 - `pipeline/tests/final-case-builder.test.js`
+- `pipeline/tests/project-audit.test.js`
 
 ## 3. AI Collaboration Process Archive
 
@@ -68,6 +71,7 @@ Primary artifacts:
 - `docs/progress-log.md`
 - `docs/context-handoff-next.md`
 - `docs/ai-generation-workflow.md`
+- `docs/llm-refinement-record.md`
 - `prompts/case-generation-v1.md`
 
 What this demonstrates:
@@ -75,7 +79,7 @@ What this demonstrates:
 - The work was built incrementally.
 - Exploration problems and fixes were recorded.
 - Later stages build on earlier artifacts instead of regenerating from scratch.
-- Prompt scaffolding exists for future LLM refinement.
+- Prompt scaffolding and dry-run review rules exist for future LLM refinement.
 
 Suggested reviewer angle:
 
@@ -127,18 +131,19 @@ Safety boundary:
 ## Suggested 5-Minute Walkthrough
 
 1. Show `README.md` as the entry point.
-2. Open `docs/test-cases-final.csv` and point out 75 cases with risk/evidence columns.
-3. Open `docs/risk-register.md` and show the risk IDs referenced by cases.
-4. Open `docs/checkout-safe-probe.md` and explain the safe checkout boundary.
-5. Open `docs/incremental-delivery-log.md` to show how the work evolved.
-6. Show `pipeline/case-generator.js` and generated outputs as the repeatable script layer.
-7. Run or cite the four test commands listed in `README.md`.
+2. Open `docs/assignment-alignment.md` to map requirements to artifacts.
+3. Open `docs/test-cases-final.csv` and point out 75 cases with risk/evidence columns.
+4. Open `docs/risk-register.md` and show the risk IDs referenced by cases.
+5. Open `docs/checkout-safe-probe.md` and explain the safe checkout boundary.
+6. Open `docs/llm-refinement-record.md` to explain the AI Native refinement gate.
+7. Run or cite `npm test` and `npm run audit`.
 
 ## Current Known Gaps
 
-- LLM refinement is scaffolded but not yet executed against a real model.
+- LLM refinement has a dry-run record but has not been executed against a real model.
 - Declined-card PoC is intentionally not enabled yet.
 - Only one main user profile path has been deeply explored.
+- Branch expansion is planned in `docs/branch-coverage-plan.md`.
 - Cross-region price comparison is not covered.
 
 ## Recommended Final Polish
@@ -147,7 +152,8 @@ Core packaging is complete:
 
 - demo script: `docs/demo-walkthrough.md`
 - submission checklist: `docs/submission-checklist.md`
+- assignment alignment: `docs/assignment-alignment.md`
 
 Optional final polish:
 
-- add an LLM dry-run log using `prompts/case-generation-v1.md`
+- execute one branch-coverage run from `docs/branch-coverage-plan.md`
