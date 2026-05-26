@@ -6,6 +6,8 @@ Current best evidence run: `exploration/runs/2026-05-24-112646`
 
 ## Page Type Overview
 
+The task book asks not to brute-force every Quiz page. This taxonomy groups the observed 46-step main path into reusable prototypes and then lets the final case set deep-test representative pages from each prototype.
+
 | Page type | Covered steps | Page signals | Main test focus |
 | --- | --- | --- | --- |
 | Entry / Age selection | 1 | Hero content, age groups, legal links | Age branching, legal links, entry CTA reachability |
@@ -21,6 +23,21 @@ Current best evidence run: `exploration/runs/2026-05-24-112646`
 | Discount | 44 | Scratch-card, discount percent, promo code | Scratch gesture, promo application, countdown, revisit behavior |
 | Paywall | 45 | Plan cards, prices, countdown, `GET MY PLAN`, renewal copy | Price display, selected plan, renewal disclosure, safe checkout transition |
 | Checkout surface | 46 | Embedded payment fields and TokenEx frames | Field presence, gateway blocking, no real payment submission |
+
+## Task-Book Prototype Mapping
+
+| Task-book expectation | Project prototype | Representative final cases |
+| --- | --- | --- |
+| Entry and segmentation | Entry / Age selection | `TC-QZ-001`, `TC-QZ-002` |
+| Single-choice questions | Single-select question | `TC-QZ-003` to `TC-QZ-006`, `TC-QZ-008`, `TC-QZ-012` to `TC-QZ-026` |
+| Multi-select questions | Multi-select question | `TC-QZ-009`, `TC-QZ-010`, `TC-QZ-014`, `TC-QZ-015`, `TC-QZ-027` to `TC-QZ-029` |
+| Numeric input and units | Unit input / Health data consent | `TC-IN-001` to `TC-IN-012` |
+| Results and calculated content | Result / chart page | `TC-RS-001`, `TC-IN-009`, `TC-IN-010` |
+| Date and event personalization | Date selector / Event question | `TC-EV-001` to `TC-EV-004` |
+| Timeout/progress behavior | Loader | `TC-LD-001` to `TC-LD-003` |
+| Contact capture | Email / name capture | `TC-CP-001` to `TC-CP-006` |
+| Discount and Paywall | Discount / Paywall | `TC-DS-001` to `TC-DS-004`, `TC-PW-001` to `TC-PW-009` |
+| Checkout safety | Checkout surface | `TC-CO-001` to `TC-CO-006`, `AUTO-046-01` |
 
 ## Main Path Page Sequence
 

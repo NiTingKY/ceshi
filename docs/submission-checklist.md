@@ -1,6 +1,6 @@
 # Submission Checklist
 
-Updated: 2026-05-24
+Updated: 2026-05-26
 
 Use this checklist before packaging or presenting the BetterMe AI Native QA assignment.
 
@@ -10,11 +10,20 @@ Use this checklist before packaging or presenting the BetterMe AI Native QA assi
 - [x] JSON mirror is available: `docs/test-cases-final.json`
 - [x] Funnel observation is documented: `docs/funnel-observation.md`
 - [x] Page taxonomy is documented: `docs/page-taxonomy.md`
+- [x] Stage 1 and 2 task-book mapping is documented: `docs/stage-1-2-task-book-mapping.md`
 - [x] Risk register is documented: `docs/risk-register.md`
 - [x] Checkout safe probe is documented: `docs/checkout-safe-probe.md`
 - [x] AI/script workflow is documented: `docs/ai-generation-workflow.md`
 - [x] Assignment alignment matrix is documented: `docs/assignment-alignment.md`
-- [x] LLM refinement dry-run is documented: `docs/llm-refinement-record.md`
+- [x] SiliconFlow Qwen3-8B refinement is documented: `docs/llm-refinement-record.md`
+- [x] SiliconFlow LLM script is available: `pipeline/siliconflow-llm-refinement.js`
+- [x] SiliconFlow LLM log is available after running `npm run llm:siliconflow`: `generated/2026-05-24-112646-cases/llm-log.json`
+- [x] Optional Bocha API dry-run script is available: `pipeline/bocha-ai-refinement.js`
+- [x] Stage 4 prompt evolution archive is documented: `docs/prompt-evolution-archive.md`
+- [x] Stage 4 AI blind spot list is documented: `docs/ai-blind-spots.md`
+- [x] Stage 4 coverage review is documented: `docs/coverage-review.md`
+- [x] Stage 4 AI collaboration retrospective is documented: `docs/ai-collaboration-retrospective.md`
+- [x] Prompt v1/v2/v3 files are available: `prompts/case-generation-v1.md`, `prompts/case-generation-v2.md`, `prompts/case-generation-v3.md`
 - [x] Branch coverage expansion plan is documented: `docs/branch-coverage-plan.md`
 - [x] Artifact map is documented: `docs/project-artifacts.md`
 - [x] Incremental delivery log is documented: `docs/incremental-delivery-log.md`
@@ -64,8 +73,11 @@ Expected latest verification:
 - `pipeline/tests/final-case-builder.test.js`: 5/5 pass
 - `pipeline/tests/runtime.test.js`: 3/3 pass
 - `pipeline/tests/project-audit.test.js`: 5/5 pass
-- full `npm test`: 40/40 pass
+- `pipeline/tests/siliconflow-llm-refinement.test.js`: 5/5 pass
+- `pipeline/tests/bocha-ai-refinement.test.js`: 7/7 pass
+- full `npm test`: 52/52 pass
 - `npm run audit`: 0 issues
+- `npm run llm:siliconflow`: writes `generated/2026-05-24-112646-cases/llm-log.json` when `SILICONFLOW_API_KEY` is set; latest run returned HTTP 200 in 57594 ms with 5502 provider-reported tokens
 
 Remote repository snapshot:
 
@@ -118,8 +130,8 @@ Optional supporting folders:
 
 ## Known Gaps to Disclose
 
-- LLM refinement is scaffolded but not executed against a real model.
-- LLM refinement dry-run is documented for review rules and expected output shape.
+- SiliconFlow `Qwen/Qwen3-8B` review is executed and logged with provider-native token usage.
+- Model output still requires human review; latest model output included one rejected claim about Checkout P0 coverage.
 - Declined-card testing is intentionally not implemented yet.
 - Deep exploration covers one main user profile path.
 - Branch expansion is planned in `docs/branch-coverage-plan.md`.

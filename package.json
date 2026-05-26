@@ -13,7 +13,9 @@
     "test:final-case-builder": "node --test pipeline/tests/final-case-builder.test.js",
     "explore": "node pipeline/explore_betterme.js",
     "generate:cases": "node pipeline/case-generator.js exploration/runs/2026-05-24-112646 generated/2026-05-24-112646-cases",
-    "build:final": "node pipeline/final-case-builder.js docs/test-cases-v1.csv generated/2026-05-24-112646-cases/generated-test-cases.csv docs/test-cases-final.csv docs/test-cases-final.json"
+    "build:final": "node pipeline/final-case-builder.js docs/test-cases-v1.csv generated/2026-05-24-112646-cases/generated-test-cases.csv docs/test-cases-final.csv docs/test-cases-final.json",
+    "llm:bocha": "node pipeline/bocha-ai-refinement.js docs/test-cases-final.json docs/risk-register.md generated/2026-05-24-112646-cases/llm-log-bocha.json",
+    "llm:siliconflow": "node pipeline/siliconflow-llm-refinement.js docs/test-cases-final.json docs/risk-register.md generated/2026-05-24-112646-cases/llm-log.json"
   },
   "devDependencies": {
     "playwright": "1.60.0"

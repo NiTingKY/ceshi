@@ -15,6 +15,7 @@ Supporting artifacts:
 - `docs/test-cases-final.json`
 - `docs/assignment-alignment.md`
 - `docs/page-taxonomy.md`
+- `docs/stage-1-2-task-book-mapping.md`
 - `docs/risk-register.md`
 - `docs/funnel-observation.md`
 - `docs/checkout-safe-probe.md`
@@ -34,6 +35,7 @@ Recommended review path:
 3. Check Checkout, Paywall, Consent, Input and Discount modules first.
 4. Cross-check `riskRefs` against `docs/risk-register.md`.
 5. Cross-check `evidence` against the referenced observation docs.
+6. Use `docs/stage-1-2-task-book-mapping.md` to compare stage 1 and stage 2 task-book requirements against the current artifacts.
 
 ## 2. AI / Script Efficiency
 
@@ -41,32 +43,43 @@ Primary artifacts:
 
 - `pipeline/case-generator.js`
 - `pipeline/final-case-builder.js`
+- `pipeline/siliconflow-llm-refinement.js`
+- `pipeline/bocha-ai-refinement.js`
 - `docs/ai-generation-workflow.md`
 - `docs/llm-refinement-record.md`
 - `prompts/case-generation-v1.md`
+- `prompts/case-generation-v2.md`
+- `prompts/case-generation-v3.md`
 
 Generated outputs:
 
 - `generated/2026-05-24-112646-cases/generated-test-cases.csv`
 - `generated/2026-05-24-112646-cases/generated-test-cases.json`
 - `generated/2026-05-24-112646-cases/case-generation-log.json`
+- `generated/2026-05-24-112646-cases/llm-log.json`
 
 What this demonstrates:
 
 - Test case drafts are generated from structured run logs, not manually copied from ad hoc AI chat.
-- The workflow has a deterministic script layer and a documented LLM refinement dry-run.
+- The workflow has a deterministic script layer and a SiliconFlow `Qwen/Qwen3-8B` LLM call that records prompt, output, duration and provider token accounting.
 - The final case builder adds risk and evidence traceability.
 
 Verification:
 
 - `pipeline/tests/case-generator.test.js`
 - `pipeline/tests/final-case-builder.test.js`
+- `pipeline/tests/siliconflow-llm-refinement.test.js`
+- `pipeline/tests/bocha-ai-refinement.test.js`
 - `pipeline/tests/project-audit.test.js`
 
 ## 3. AI Collaboration Process Archive
 
 Primary artifacts:
 
+- `docs/prompt-evolution-archive.md`
+- `docs/ai-blind-spots.md`
+- `docs/coverage-review.md`
+- `docs/ai-collaboration-retrospective.md`
 - `docs/incremental-delivery-log.md`
 - `docs/progress-log.md`
 - `docs/context-handoff-next.md`
@@ -80,6 +93,7 @@ What this demonstrates:
 - Exploration problems and fixes were recorded.
 - Later stages build on earlier artifacts instead of regenerating from scratch.
 - Prompt scaffolding and dry-run review rules exist for future LLM refinement.
+- The four required stage 4 process documents are now split into independently reviewable files.
 
 Suggested reviewer angle:
 

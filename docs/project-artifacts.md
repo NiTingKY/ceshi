@@ -8,11 +8,13 @@ This document is the delivery map for the whole workspace. It explains what each
 
 | Area | Status | Main artifacts |
 | --- | --- | --- |
+| Task specification | Available in repo | `docs/task-spec/riqi-ai-native-qa-5-day-challenge.pdf` |
 | Funnel exploration | Complete for main Quiz -> Discount -> Paywall path; checkout safely probed | `exploration/runs/2026-05-24-112646`, `docs/funnel-observation.md` |
 | Page taxonomy | Complete first version | `docs/page-taxonomy.md` |
 | Risk register | Complete first version with 40 risks | `docs/risk-register.md` |
 | Test cases | Final merged version available | `docs/test-cases-final.csv`, `docs/test-cases-final.json` |
 | AI/script efficiency | Repeatable script layer complete; LLM refinement scaffold and dry-run ready | `pipeline/case-generator.js`, `pipeline/final-case-builder.js`, `docs/ai-generation-workflow.md`, `docs/llm-refinement-record.md`, `prompts/case-generation-v1.md` |
+| Stage 4 AI collaboration archive | Complete first version | `docs/prompt-evolution-archive.md`, `docs/ai-blind-spots.md`, `docs/coverage-review.md`, `docs/ai-collaboration-retrospective.md` |
 | Checkout safety | Safe probe complete; no real payment submitted | `docs/checkout-safe-probe.md`, `exploration/runs/2026-05-24-112646/checkout-summary.md` |
 | Handoff and traceability | Ongoing | `docs/context-handoff.md`, `docs/context-handoff-next.md`, `docs/progress-log.md`, `docs/incremental-delivery-log.md` |
 | Reviewer entry point | Complete | `README.md`, `docs/final-review-guide.md`, `docs/assignment-alignment.md` |
@@ -54,6 +56,8 @@ Why final has 75 cases:
 | `pipeline/browser-actions.js` | Click helpers, consent handling, scratch gesture, payment surface inspection | `pipeline/tests/browser-actions.test.js` |
 | `pipeline/case-generator.js` | Converts `exploration/runs/2026-05-24-112646/flow-log.json` into generated CSV/JSON test cases | `pipeline/tests/case-generator.test.js` |
 | `pipeline/final-case-builder.js` | Merges v1/manual cases with script output and adds risk/evidence fields | `pipeline/tests/final-case-builder.test.js` |
+| `pipeline/siliconflow-llm-refinement.js` | Calls SiliconFlow `Qwen/Qwen3-8B` and writes a reproducible model log with prompt, output, duration and provider token usage | `pipeline/tests/siliconflow-llm-refinement.test.js` |
+| `pipeline/bocha-ai-refinement.js` | Calls Bocha AI Search and writes an optional API dry-run log | `pipeline/tests/bocha-ai-refinement.test.js` |
 | `pipeline/runtime.js` | Provides portable browser launch configuration with optional `BETTERME_BROWSER_EXECUTABLE` override | `pipeline/tests/runtime.test.js` |
 | `pipeline/project-audit.js` | Checks for mojibake, old declined-card claims, broken concrete artifact references, final case traceability, risk IDs, evidence files, and checkout safety text | `pipeline/tests/project-audit.test.js` |
 | `pipeline/playwright-runtime.md` | Runtime commands and environment notes | Updated with checkout-safe probe mode |
@@ -64,10 +68,15 @@ Why final has 75 cases:
 | --- | --- | --- |
 | `docs/funnel-observation.md` | Summarizes observed funnel states and commercial/paywall facts | Updated after Paywall and Checkout probes |
 | `docs/page-taxonomy.md` | Defines page types and page sequence | Supports test design and generator rules |
+| `docs/stage-1-2-task-book-mapping.md` | Maps original stage 1 and stage 2 requirements to project artifacts, including probability supplement and current gaps | Makes first two scoring stages directly reviewable |
 | `docs/risk-register.md` | Lists 40 product/QA risks | Used by final case riskRefs |
 | `docs/checkout-safe-probe.md` | Documents checkout probe boundary and results | Proves no real payment submission |
 | `docs/ai-generation-workflow.md` | Explains repeatable script layer and future LLM slot | Supports AI efficiency scoring |
 | `docs/llm-refinement-record.md` | Documents a dry-run LLM refinement sample and review rules | Closes the AI Native loop without overclaiming live model usage |
+| `docs/prompt-evolution-archive.md` | Records three prompt iteration cases with v1/v2/v3 prompts, raw-output problems, and human decisions | Stage 4 prompt evolution archive |
+| `docs/ai-blind-spots.md` | Lists 15 AI-missed or AI-weakened test cases and the manual fixes | Stage 4 AI blind spot list |
+| `docs/coverage-review.md` | Records AI critic suggestions and human adopt/reject/defer decisions | Stage 4 coverage review |
+| `docs/ai-collaboration-retrospective.md` | 800-1500 Chinese-character retrospective on where AI helped, hurt, and should not be trusted | Stage 4 collaboration retrospective |
 | `docs/assignment-alignment.md` | Maps understood challenge requirements to concrete artifacts | Makes task-completion review direct and auditable |
 | `docs/branch-coverage-plan.md` | Defines the next profile-branch expansion path | Discloses and plans around the current single-path evidence boundary |
 | `docs/context-handoff-next.md` | Fresh handoff after Paywall/Checkout/case-generation progress | Avoids original mojibake issue |
@@ -82,6 +91,8 @@ Why final has 75 cases:
 | File | Purpose |
 | --- | --- |
 | `prompts/case-generation-v1.md` | Prompt draft for future LLM refinement of script-generated cases |
+| `prompts/case-generation-v2.md` | Task-book coverage review prompt with stage gaps and accept/defer decisions |
+| `prompts/case-generation-v3.md` | SiliconFlow-style strict JSON review prompt aligned with `pipeline/siliconflow-llm-refinement.js` |
 
 ## Runtime Packaging
 

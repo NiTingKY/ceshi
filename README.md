@@ -12,6 +12,7 @@ The work focuses on test design quality, repeatable AI/script efficiency, safe p
 
 | What to review | File |
 | --- | --- |
+| Original task specification | `docs/task-spec/riqi-ai-native-qa-5-day-challenge.pdf` |
 | Final test case set | `docs/test-cases-final.csv` |
 | Final case set as JSON | `docs/test-cases-final.json` |
 | Assignment alignment matrix | `docs/assignment-alignment.md` |
@@ -20,10 +21,15 @@ The work focuses on test design quality, repeatable AI/script efficiency, safe p
 | Incremental delivery narrative | `docs/incremental-delivery-log.md` |
 | Funnel observation | `docs/funnel-observation.md` |
 | Page taxonomy | `docs/page-taxonomy.md` |
+| Stage 1 and 2 task-book mapping | `docs/stage-1-2-task-book-mapping.md` |
 | Risk register | `docs/risk-register.md` |
 | Checkout safety record | `docs/checkout-safe-probe.md` |
 | AI/script workflow | `docs/ai-generation-workflow.md` |
 | LLM refinement dry-run | `docs/llm-refinement-record.md` |
+| Stage 4 prompt evolution archive | `docs/prompt-evolution-archive.md` |
+| Stage 4 AI blind spot list | `docs/ai-blind-spots.md` |
+| Stage 4 coverage review | `docs/coverage-review.md` |
+| Stage 4 AI collaboration retrospective | `docs/ai-collaboration-retrospective.md` |
 | Branch coverage expansion plan | `docs/branch-coverage-plan.md` |
 | Submission checklist | `docs/submission-checklist.md` |
 | Demo walkthrough | `docs/demo-walkthrough.md` |
@@ -112,14 +118,42 @@ The project includes repeatable scripts rather than one-off manual AI prompting.
 | `pipeline/explore_betterme.js` | Runs the Playwright funnel exploration and captures evidence |
 | `pipeline/case-generator.js` | Generates draft test cases from `exploration/runs/2026-05-24-112646/flow-log.json` |
 | `pipeline/final-case-builder.js` | Merges manual and script-generated cases into final CSV/JSON |
+| `pipeline/siliconflow-llm-refinement.js` | Calls SiliconFlow `Qwen/Qwen3-8B` for a reproducible LLM review and writes `generated/2026-05-24-112646-cases/llm-log.json` |
+| `pipeline/bocha-ai-refinement.js` | Optional Bocha AI Search dry-run script |
 
 AI workflow documentation:
 
 - `docs/ai-generation-workflow.md`
 - `prompts/case-generation-v1.md`
+- `prompts/case-generation-v2.md`
+- `prompts/case-generation-v3.md`
 - `docs/llm-refinement-record.md`
+- `docs/prompt-evolution-archive.md`
+- `docs/ai-blind-spots.md`
+- `docs/coverage-review.md`
+- `docs/ai-collaboration-retrospective.md`
 
-The current implementation uses a deterministic script layer and includes a prompt scaffold plus a documented LLM refinement dry-run. This keeps the work auditable and repeatable while avoiding unsupported claims about live model execution.
+The current implementation uses a deterministic script layer plus a real SiliconFlow `Qwen/Qwen3-8B` model call for the review step. This keeps the work auditable and repeatable while preserving human review before any model suggestion is merged into the final cases.
+
+Run the SiliconFlow LLM review:
+
+```powershell
+$env:SILICONFLOW_API_KEY='<your key>'
+npm run llm:siliconflow
+```
+
+Optional Bocha API dry-run:
+
+```powershell
+$env:BOCHA_API_KEY='<your key>'
+npm run llm:bocha
+```
+
+Output:
+
+- `generated/2026-05-24-112646-cases/llm-log.json`
+
+The log records provider, endpoint, prompt, output, duration, API call count, estimated token usage, and whether the provider returned explicit usage metadata.
 
 ## How to Verify
 
@@ -222,8 +256,8 @@ npm run build:final
 
 ## Suggested Next Step
 
-The core packaging is now complete. The next optional increment is an LLM refinement dry run:
+The next highest-value increment is the real LLM refinement step required by the task specification:
 
-- feed a small sample from `docs/test-cases-final.json` into `prompts/case-generation-v1.md`
-- produce a schema-valid refined sample
-- record input, output, assumptions and validation notes
+- call a model from a repeatable script instead of a manual chat
+- write input, output, token count and duration to a local log
+- validate the refined output before merging anything into the final cases
