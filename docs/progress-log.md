@@ -37,7 +37,7 @@ This log summarizes the important project milestones without relying on machine-
 - Added `pipeline/case-generator.js` to generate deterministic cases from `exploration/runs/2026-05-24-112646/flow-log.json`.
 - Generated 51 script-derived cases in `generated/2026-05-24-112646-cases/`.
 - Added `pipeline/final-case-builder.js` to merge manual and generated cases.
-- Produced 75 final cases in:
+- Produced 106 final cases in:
   - `docs/test-cases-final.csv`
   - `docs/test-cases-final.json`
 

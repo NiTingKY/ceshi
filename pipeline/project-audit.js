@@ -3,11 +3,19 @@ const path = require("node:path");
 
 const TEXT_EXTENSIONS = new Set([".md", ".csv", ".json", ".js"]);
 const PROJECT_ROOT_PREFIXES = /^(docs|pipeline|exploration|generated|prompts)\//;
+const chars = (...codes) => String.fromCharCode(...codes);
 const BAD_TEXT_TOKENS = [
-  "\uFFFD", "\u9225", "\u9241", "\u9242", "\u93C7", "\u93C8", "\u93B5", "\u5A55",
-  "\u7470", "\u7481", "\u6924", "\u705E", "\u935A", "\u8FBE", "\u5A34", "\u5BEE",
-  "\u60C2", "\u76F6", "\u951B", "\u7A0B", "\u8930", "\u4E67", "\u4E6A", "\u4E06",
-  "\u4E05", "\u5B6D", "\u5BB2", "\u6B5A",
+  chars(0xfffd),
+  chars(0x6769, 0x6b0c),
+  chars(0x93c8, 0x20ac),
+  chars(0x9366, 0x7248, 0x67df),
+  chars(0x5a34, 0x5b2d, 0x762f),
+  chars(0x7481, 0x6350),
+  chars(0x9422, 0x3124, 0x7dd8),
+  chars(0x93c2, 0x56e8),
+  chars(0x6d60, 0xbbee, 0x59e4),
+  chars(0x6d93, 0x5b85),
+  chars(0x752f),
   ["Stripe", " refusal"].join(""),
   ["Payment", " is declined"].join(""),
   ["4000", " 0000", " 0000", " 0002"].join(""),
@@ -15,6 +23,23 @@ const BAD_TEXT_TOKENS = [
 const BAD_TEXT_SIGNAL = new RegExp(BAD_TEXT_TOKENS.map(escapeRegExp).join("|"));
 const FINAL_CASE_PATH = path.join("docs", "test-cases-final.csv");
 const RISK_REGISTER_PATH = path.join("docs", "risk-register.md");
+const EXPECTED_FINAL_CASE_COUNT = 106;
+const EXPECTED_FINAL_HEADERS = [
+  "id",
+  "module",
+  "submodule",
+  "priority",
+  "type",
+  "title",
+  "precondition",
+  "steps",
+  "expected",
+  "source",
+  "riskRefs",
+  "evidence",
+  "refinementNotes",
+];
+const ALLOWED_MODULES = new Set(["Quiz", "Paywall", "Checkout", "Cross-cutting", "Subscription"]);
 
 function escapeRegExp(value) {
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -109,6 +134,15 @@ function parseCsv(csvText) {
   return dataRows.map((dataRow) => Object.fromEntries(headers.map((header, index) => [header, dataRow[index] || ""])));
 }
 
+function parseCsvHeaders(csvText) {
+  const [headerLine = ""] = String(csvText || "").split(/\r?\n/, 1);
+  return parseCsv(`${headerLine}\n`).length
+    ? []
+    : headerLine
+      .split(",")
+      .map((header) => header.trim().replace(/^"|"$/g, "").replace(/""/g, '"'));
+}
+
 function extractRiskIds(markdownText) {
   return new Set([...String(markdownText || "").matchAll(/\|\s*(R-\d{3})\s*\|/g)].map((match) => match[1]));
 }
@@ -138,9 +172,15 @@ function auditFinalCases(rootDir, issues) {
   const riskRegisterPath = path.join(rootDir, RISK_REGISTER_PATH);
   if (!fs.existsSync(finalCasePath)) return;
 
-  const cases = parseCsv(fs.readFileSync(finalCasePath, "utf8"));
-  if (cases.length !== 75) {
-    issues.push({ type: "final-case-count", file: finalCasePath, count: cases.length, expected: 75 });
+  const csvText = fs.readFileSync(finalCasePath, "utf8");
+  const headers = parseCsvHeaders(csvText);
+  const cases = parseCsv(csvText);
+  if (EXPECTED_FINAL_HEADERS.join("|") !== headers.join("|")) {
+    issues.push({ type: "final-case-schema", file: finalCasePath, headers, expected: EXPECTED_FINAL_HEADERS });
+  }
+
+  if (cases.length !== EXPECTED_FINAL_CASE_COUNT) {
+    issues.push({ type: "final-case-count", file: finalCasePath, count: cases.length, expected: EXPECTED_FINAL_CASE_COUNT });
   }
 
   const riskIds = fs.existsSync(riskRegisterPath)
@@ -151,6 +191,14 @@ function auditFinalCases(rootDir, issues) {
     const rowNumber = index + 2;
     const riskRefs = splitList(testCase.riskRefs);
     const evidenceRefs = splitList(testCase.evidence);
+
+    if (!ALLOWED_MODULES.has(testCase.module)) {
+      issues.push({ type: "final-case-invalid-module", file: finalCasePath, row: rowNumber, id: testCase.id, module: testCase.module });
+    }
+
+    if (!testCase.submodule) {
+      issues.push({ type: "final-case-missing-submodule", file: finalCasePath, row: rowNumber, id: testCase.id });
+    }
 
     if (!riskRefs.length) {
       issues.push({ type: "final-case-missing-risk", file: finalCasePath, row: rowNumber, id: testCase.id });
@@ -221,6 +269,7 @@ module.exports = {
   extractRiskIds,
   hasBadTextSignal,
   hasUnsafeCheckoutInstruction,
+  parseCsvHeaders,
   parseCsv,
   resolveProjectRef,
   shouldIgnoreRef,

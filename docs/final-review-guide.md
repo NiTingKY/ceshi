@@ -16,6 +16,7 @@ Supporting artifacts:
 - `docs/assignment-alignment.md`
 - `docs/page-taxonomy.md`
 - `docs/stage-1-2-task-book-mapping.md`
+- `docs/cross-cutting-coverage-status.md`
 - `docs/risk-register.md`
 - `docs/funnel-observation.md`
 - `docs/checkout-safe-probe.md`
@@ -24,9 +25,10 @@ Supporting artifacts:
 
 What this demonstrates:
 
-- 75 final cases across Quiz, Discount, Paywall and Checkout.
+- 106 final cases across Quiz, Discount, Paywall, Checkout, Cross-cutting and Subscription modules.
 - Each case has priority, type, precondition, steps, expected result, source, risk references and evidence references.
 - Coverage includes positive, negative, validation, compliance, pricing, resilience and safety scenarios.
+- Cross-cutting coverage is split into partly executed evidence and disclosed design coverage so reviewers can see exactly what was run.
 
 Recommended review path:
 
@@ -92,7 +94,7 @@ What this demonstrates:
 - The work was built incrementally.
 - Exploration problems and fixes were recorded.
 - Later stages build on earlier artifacts instead of regenerating from scratch.
-- Prompt scaffolding and dry-run review rules exist for future LLM refinement.
+- Prompt scaffolding, real LLM review logs, and human accept/reject rules show how AI feedback is controlled before it affects final cases.
 - The four required stage 4 process documents are now split into independently reviewable files.
 
 Suggested reviewer angle:
@@ -124,6 +126,7 @@ What this demonstrates:
 Primary artifacts:
 
 - `pipeline/explore_betterme.js`
+- `pipeline/cross-cutting-probe.js`
 - `pipeline/browser-actions.js`
 - `pipeline/explore-helpers.js`
 - `pipeline/playwright-runtime.md`
@@ -135,6 +138,7 @@ What this demonstrates:
 - The browser automation can collect screenshots, page text, HTML and structured logs.
 - It handles real-world UI friction such as cookie prompts, nested button text, disabled buttons, consent checkboxes, loader pages and scratch-card interaction.
 - Checkout probing is guarded by an explicit environment variable.
+- The cross-cutting probe renders captured pages at mobile, tablet and desktop widths, records safe DOM/control metadata, local render timing and analytics-like URL inventory.
 
 Safety boundary:
 
@@ -146,7 +150,7 @@ Safety boundary:
 
 1. Show `README.md` as the entry point.
 2. Open `docs/assignment-alignment.md` to map requirements to artifacts.
-3. Open `docs/test-cases-final.csv` and point out 75 cases with risk/evidence columns.
+3. Open `docs/test-cases-final.csv` and point out 106 cases with risk/evidence columns.
 4. Open `docs/risk-register.md` and show the risk IDs referenced by cases.
 5. Open `docs/checkout-safe-probe.md` and explain the safe checkout boundary.
 6. Open `docs/llm-refinement-record.md` to explain the AI Native refinement gate.
@@ -154,11 +158,12 @@ Safety boundary:
 
 ## Current Known Gaps
 
-- LLM refinement has a dry-run record but has not been executed against a real model.
+- SiliconFlow `Qwen/Qwen3-8B` refinement has been executed against a real model; the latest log is `generated/2026-05-26-ai-native-run/llm-log.json` and records prompt, output, duration, and provider-reported token usage.
+- Model output is still treated as review evidence, not an automatic merge source.
 - Declined-card PoC is intentionally not enabled yet.
 - Only one main user profile path has been deeply explored.
 - Branch expansion is planned in `docs/branch-coverage-plan.md`.
-- Cross-region price comparison is not covered.
+- Cross-region price comparison and subscription lifecycle execution remain disclosed design coverage until approved safe-region, staging or sandbox billing access is available.
 
 ## Recommended Final Polish
 

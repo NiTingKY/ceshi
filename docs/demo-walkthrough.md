@@ -8,7 +8,7 @@ This is a suggested walkthrough for presenting the project.
 
 Say:
 
-> This repository is a BetterMe Pilates AI Native QA delivery package. The final output is 75 traceable test cases, a 40-risk register, Playwright-based funnel evidence, a safe checkout probe, and a repeatable script layer that generates draft cases from captured run logs.
+> This repository is a BetterMe Pilates AI Native QA delivery package. The final output is 106 traceable test cases, a 45-risk register, Playwright-based funnel evidence, a safe checkout probe, and a repeatable AI Native pipeline that generates draft cases, runs Qwen3-8B review, and builds final CSV/JSON output.
 
 Open:
 
@@ -23,7 +23,7 @@ Close with:
 ## 3-Minute Version
 
 1. Open `docs/assignment-alignment.md` and show the requirement-to-artifact mapping.
-2. Open `docs/test-cases-final.csv` and show 75 cases with `riskRefs` and `evidence`.
+2. Open `docs/test-cases-final.csv` and show 106 cases with `riskRefs` and `evidence`.
 3. Open `docs/risk-register.md` and show the 40 risk IDs.
 4. Open `docs/checkout-safe-probe.md` and explain the safety boundary.
 5. Open `docs/llm-refinement-record.md` and explain how LLM output would be reviewed before merging.
@@ -58,7 +58,7 @@ Open:
 
 Say:
 
-> The final case set has 75 cases. It keeps the broader manual/AI-assisted v1 coverage and adds script-derived checkout iframe evidence. Each case includes priority, type, precondition, steps, expected result, source, risk references and evidence references.
+> The final case set has 106 cases. It keeps the broader manual/AI-assisted v1 coverage, adds script-derived checkout iframe evidence, and adds coverage-extension cases for compatibility, accessibility, localization, performance, analytics and subscription lifecycle. Each case includes priority, type, precondition, steps, expected result, source, risk references and evidence references.
 
 Show:
 
@@ -75,7 +75,7 @@ Open:
 
 Say:
 
-> The funnel was first captured with Playwright and then normalized into reusable page types: single-select, multi-select, consent input, unit input, loader, discount, Paywall and checkout surface. The risk register has 40 risks, and the final test cases reference those risk IDs.
+> The funnel was first captured with Playwright and then normalized into reusable page types: single-select, multi-select, consent input, unit input, loader, discount, Paywall and checkout surface. The risk register has 45 risks, and the final test cases reference those risk IDs.
 
 Point out:
 
@@ -114,13 +114,13 @@ Open:
 
 Say:
 
-> Instead of only asking AI to write cases manually, I built a repeatable script layer. It parses `exploration/runs/2026-05-24-112646/flow-log.json`, classifies pages, generates draft cases, and then merges them with manually reviewed cases while adding risk and evidence traceability. I also documented an LLM refinement dry-run so model output has review rules before it can change the final cases.
+> Instead of only asking AI to write cases manually, I built a repeatable script layer. It parses `exploration/runs/2026-05-24-112646/flow-log.json`, classifies pages, generates draft cases, and then merges them with manually reviewed cases while adding risk and evidence traceability. I also ran a real SiliconFlow `Qwen/Qwen3-8B` review and logged the prompt, output, duration, and token usage before applying any human decisions.
 
 Point out:
 
 - generated 51 script-derived cases
-- final merged 75 cases
-- prompt v1 and dry-run review rules exist for future LLM refinement
+- final merged 106 cases
+- prompt v1/v2/v3 and real LLM review logs exist, with human accept/reject rules
 
 ## 4:00 - 4:40 Incremental Process
 
@@ -147,7 +147,7 @@ Open:
 
 Say:
 
-> The verification commands are listed here. The latest state has all four test files passing, the final CSV has 75 rows, and every case has risk and evidence fields.
+> The verification commands are listed here. The latest state has all test files passing, the final CSV has 106 rows, and every case has risk and evidence fields.
 
 Point out:
 
@@ -155,7 +155,7 @@ Point out:
 - 6/6 browser action tests
 - 4/4 case generator tests
 - 5/5 final case builder tests
-- final rows: 75
+- final rows: 106
 - missing risk/evidence: 0
 
 ## If Asked About Gaps

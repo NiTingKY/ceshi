@@ -1,0 +1,246 @@
+{
+  "generatedAt": "2026-05-26T15:05:39.362Z",
+  "sourceRun": "exploration/runs/2026-05-24-112646",
+  "representativePages": [
+    {
+      "label": "quiz",
+      "step": 1,
+      "stage": "quiz",
+      "url": "https://betterme-pilates.com/first-page-brand-palette?flow=2117"
+    },
+    {
+      "label": "paywall",
+      "step": 45,
+      "stage": "paywall",
+      "url": "https://betterme-pilates.com/checkout-personalized-generated-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22"
+    },
+    {
+      "label": "checkout",
+      "step": 46,
+      "stage": "paywall",
+      "url": "https://betterme-pilates.com/checkout-personalized-generated-brand-palette?order=cb3bcea6-8cb2-42d0-b39c-86cf63180c22"
+    }
+  ],
+  "viewportChecks": [
+    {
+      "name": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "horizontalOverflow": false,
+      "bodyTextCaptured": true
+    },
+    {
+      "name": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "horizontalOverflow": false,
+      "bodyTextCaptured": true
+    },
+    {
+      "name": "desktop-1440",
+      "width": 1440,
+      "height": 900,
+      "horizontalOverflow": false,
+      "bodyTextCaptured": true
+    },
+    {
+      "name": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "horizontalOverflow": true,
+      "bodyTextCaptured": true
+    },
+    {
+      "name": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "horizontalOverflow": true,
+      "bodyTextCaptured": true
+    },
+    {
+      "name": "desktop-1440",
+      "width": 1440,
+      "height": 900,
+      "horizontalOverflow": true,
+      "bodyTextCaptured": true
+    },
+    {
+      "name": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "horizontalOverflow": true,
+      "bodyTextCaptured": true
+    },
+    {
+      "name": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "horizontalOverflow": true,
+      "bodyTextCaptured": true
+    },
+    {
+      "name": "desktop-1440",
+      "width": 1440,
+      "height": 900,
+      "horizontalOverflow": true,
+      "bodyTextCaptured": true
+    }
+  ],
+  "rawViewportChecks": [
+    {
+      "label": "quiz",
+      "name": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "bodyTextLength": 466,
+      "focusableCount": 40,
+      "unlabeledControls": 2,
+      "renderMs": 56
+    },
+    {
+      "label": "quiz",
+      "name": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "bodyTextLength": 466,
+      "focusableCount": 40,
+      "unlabeledControls": 2,
+      "renderMs": 59
+    },
+    {
+      "label": "quiz",
+      "name": "desktop-1440",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "bodyTextLength": 466,
+      "focusableCount": 40,
+      "unlabeledControls": 2,
+      "renderMs": 49
+    },
+    {
+      "label": "paywall",
+      "name": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 407,
+      "bodyTextLength": 6020,
+      "focusableCount": 55,
+      "unlabeledControls": 1,
+      "renderMs": 53
+    },
+    {
+      "label": "paywall",
+      "name": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 800,
+      "bodyTextLength": 6020,
+      "focusableCount": 55,
+      "unlabeledControls": 1,
+      "renderMs": 58
+    },
+    {
+      "label": "paywall",
+      "name": "desktop-1440",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1452,
+      "bodyTextLength": 6028,
+      "focusableCount": 55,
+      "unlabeledControls": 1,
+      "renderMs": 55
+    },
+    {
+      "label": "checkout",
+      "name": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 407,
+      "bodyTextLength": 6321,
+      "focusableCount": 58,
+      "unlabeledControls": 2,
+      "renderMs": 55
+    },
+    {
+      "label": "checkout",
+      "name": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 800,
+      "bodyTextLength": 6321,
+      "focusableCount": 58,
+      "unlabeledControls": 2,
+      "renderMs": 54
+    },
+    {
+      "label": "checkout",
+      "name": "desktop-1440",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1452,
+      "bodyTextLength": 6329,
+      "focusableCount": 58,
+      "unlabeledControls": 2,
+      "renderMs": 55
+    }
+  ],
+  "networkSignals": {
+    "analyticsLikeHosts": [],
+    "redactedUrls": [
+      "https://betterme-pilates.com/first-page-brand-palette",
+      "nullblank",
+      "https://betterme-pilates.com/generated-questionary-brand-palette",
+      "https://betterme-pilates.com/email-generated-brand-palette",
+      "https://betterme-pilates.com/purchase-with-input-name-and-graph-brand-palette",
+      "null/",
+      "https://betterme-pilates.com/scratch-card",
+      "https://betterme-pilates.com/checkout-personalized-generated-brand-palette",
+      "https://eu1-htp.tokenex.com/iframe/v3"
+    ]
+  },
+  "coverageStatus": [
+    {
+      "area": "Compatibility",
+      "cases": "TC-XC-001 to TC-XC-006",
+      "status": "partly-executed",
+      "evidence": "generated/2026-05-26-cross-cutting-probe/summary.md",
+      "remainingGap": "Safari, mobile Safari, Firefox, and WeChat still need real-device or approved browser execution."
+    },
+    {
+      "area": "Accessibility",
+      "cases": "TC-A11Y-001 to TC-A11Y-006",
+      "status": "partly-executed",
+      "evidence": "generated/2026-05-26-cross-cutting-probe/summary.md",
+      "remainingGap": "Basic keyboard/control metadata is probed; full WCAG review or axe-style audit remains future work."
+    },
+    {
+      "area": "Localization",
+      "cases": "TC-LOC-001 to TC-LOC-005",
+      "status": "design-disclosed",
+      "evidence": "docs/branch-coverage-plan.md",
+      "remainingGap": "Real currency and locale comparison needs approved safe-region execution."
+    },
+    {
+      "area": "Performance and analytics",
+      "cases": "TC-PERF-001 to TC-PERF-003; TC-AN-001 to TC-AN-003",
+      "status": "partly-executed",
+      "evidence": "generated/2026-05-26-cross-cutting-probe/summary.md",
+      "remainingGap": "Local render timing and analytics-like request inventory exist; backend event correctness needs internal analytics spec."
+    },
+    {
+      "area": "Subscription lifecycle",
+      "cases": "TC-SUB-001 to TC-SUB-008",
+      "status": "design-disclosed",
+      "evidence": "docs/cross-cutting-coverage-status.md",
+      "remainingGap": "Post-purchase lifecycle execution requires staging, sandbox billing, or a test account with explicit approval."
+    }
+  ],
+  "safetyBoundary": {
+    "realCardEntered": false,
+    "paymentSubmitted": false,
+    "checkoutProbeOnly": true
+  }
+}

@@ -42,4 +42,4 @@ The AI was most useful for broad case enumeration and wording cleanup. It was we
 - stateful funnel behavior after refresh, back, or re-entry;
 - third-party iframe/payment architecture.
 
-The final case set therefore keeps a high manual-review ratio: `AI+manual` plus `manual` accounts for 43 of 75 final cases, or 57.3%. This is intentionally above the task specification's minimum threshold for human contribution.
+The final case set therefore keeps a high manual-review ratio: `AI+manual` plus `manual` accounts for 74 of 106 final cases, or 69.8%. This is intentionally above the task specification's minimum threshold for human contribution.

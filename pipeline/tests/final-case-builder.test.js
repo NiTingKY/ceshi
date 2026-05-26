@@ -5,6 +5,8 @@ const {
   buildFinalCases,
   inferEvidence,
   inferRiskRefs,
+  inferSubmodule,
+  inferTopLevelModule,
   parseCsv,
   toCsv,
 } = require("../final-case-builder");
@@ -26,6 +28,17 @@ test("inferRiskRefs maps case modules and titles to risk ids", () => {
 test("inferEvidence links cases to observed artifacts", () => {
   assert.match(inferEvidence({ module: "Paywall", title: "Paywall displays three plans" }), /paywall-summary/);
   assert.match(inferEvidence({ module: "Checkout", title: "Empty card form cannot submit" }), /checkout-summary/);
+  assert.match(inferEvidence({ module: "Cross-cutting", type: "Compatibility", title: "Mobile 375 viewport preserves quiz CTA reachability" }), /cross-cutting-probe\/summary/);
+  assert.match(inferEvidence({ module: "Subscription", title: "Renewal failure enters grace period without immediate data loss" }), /cross-cutting-coverage-status/);
+});
+
+test("inferTopLevelModule and inferSubmodule map detailed modules to task-book schema", () => {
+  assert.equal(inferTopLevelModule({ module: "Height Input" }), "Quiz");
+  assert.equal(inferSubmodule({ module: "Height Input" }), "Quiz - Height Input");
+  assert.equal(inferTopLevelModule({ module: "Discount" }), "Paywall");
+  assert.equal(inferSubmodule({ module: "Discount" }), "Paywall - Discount");
+  assert.equal(inferTopLevelModule({ module: "Checkout" }), "Checkout");
+  assert.equal(inferSubmodule({ module: "Checkout" }), "Checkout");
 });
 
 test("buildFinalCases preserves manual cases and appends non-duplicate generated checkout coverage", () => {
@@ -42,10 +55,37 @@ test("buildFinalCases preserves manual cases and appends non-duplicate generated
 
   assert.equal(finalCases.length, 3);
   assert.equal(finalCases[0].id, "TC-QZ-001");
+  assert.equal(finalCases[0].module, "Quiz");
+  assert.equal(finalCases[0].submodule, "Quiz - Quiz Entry");
   assert.equal(finalCases[2].id, "AUTO-046-01");
+  assert.equal(finalCases[2].module, "Checkout");
+  assert.equal(finalCases[2].submodule, "Checkout");
   assert.equal(finalCases[2].source, "script-generated+review-needed");
   assert.ok(finalCases.every((testCase) => "riskRefs" in testCase));
   assert.ok(finalCases.every((testCase) => "evidence" in testCase));
+});
+
+test("buildFinalCases appends coverage extension cases after generated safety evidence", () => {
+  const manual = [
+    { id: "TC-QZ-001", module: "Quiz Entry", priority: "P0", type: "Functional", title: "Start quiz", precondition: "", steps: "", expected: "", source: "AI+manual" },
+  ];
+  const generated = [
+    { id: "AUTO-046-01", module: "Checkout", priority: "P0", type: "Safety", title: "Checkout payment fields are captured without submitting payment", precondition: "", steps: "", expected: "", source: "script-generated" },
+  ];
+  const extension = [
+    { id: "TC-XC-001", module: "Cross-cutting", priority: "P1", type: "Compatibility", title: "Mobile 375 viewport preserves quiz CTA reachability", precondition: "", steps: "", expected: "", source: "AI+manual" },
+    { id: "TC-SUB-001", module: "Subscription", priority: "P1", type: "Functional", title: "Trial-to-active subscription state has clear renewal terms", precondition: "", steps: "", expected: "", source: "AI+manual" },
+  ];
+
+  const finalCases = buildFinalCases(manual, generated, extension);
+
+  assert.equal(finalCases.length, 4);
+  assert.equal(finalCases[2].id, "TC-XC-001");
+  assert.equal(finalCases[3].id, "TC-SUB-001");
+  assert.match(finalCases[2].riskRefs, /R-041/);
+  assert.match(finalCases[3].riskRefs, /R-045/);
+  assert.match(finalCases[2].evidence, /cross-cutting-probe/);
+  assert.match(finalCases[3].refinementNotes, /Coverage extension/);
 });
 
 test("toCsv emits final schema", () => {
@@ -53,6 +93,7 @@ test("toCsv emits final schema", () => {
     {
       id: "TC-1",
       module: "Quiz",
+      submodule: "Quiz - Entry",
       priority: "P1",
       type: "Functional",
       title: "Title",
@@ -66,5 +107,5 @@ test("toCsv emits final schema", () => {
     },
   ]);
 
-  assert.match(csv, /^"id","module","priority","type","title","precondition","steps","expected","source","riskRefs","evidence","refinementNotes"/);
+  assert.match(csv, /^"id","module","submodule","priority","type","title","precondition","steps","expected","source","riskRefs","evidence","refinementNotes"/);
 });

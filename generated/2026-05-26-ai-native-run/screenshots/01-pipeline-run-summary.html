@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AI Native Pipeline Run Summary</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; color: #17202a; background: #f7f9fb; }
+    h1 { font-size: 30px; margin: 0 0 18px; }
+    h2 { font-size: 20px; margin: 24px 0 8px; }
+    p, li { font-size: 14px; line-height: 1.5; }
+    table { border-collapse: collapse; width: 100%; background: white; font-size: 12px; }
+    th, td { border: 1px solid #d6dde6; padding: 7px 8px; vertical-align: top; }
+    th { background: #e9eef5; text-align: left; position: sticky; top: 0; }
+    td { max-width: 260px; overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <h1>AI Native Pipeline Run Summary</h1>
+  <h1>AI Native Case Pipeline Run</h1>
+<p>Generated at: 2026-05-26T15:06:33.850Z</p>
+<h2>Purpose</h2>
+<p>This run demonstrates that the stage 2 case set is produced through a repeatable AI-native pipeline: structured browser evidence becomes draft cases, Qwen/Qwen3-8B reviews coverage, and a final builder writes the reviewed CSV/JSON package.</p>
+<h2>Inputs</h2>
+<ul><li>Evidence run: `exploration/runs/2026-05-24-112646`</li><li>Flow log: `exploration/runs/2026-05-24-112646/flow-log.json`</li><li>Risk register: `docs/risk-register.md`</li></ul>
+<h2>Outputs</h2>
+<ul><li>Generated draft CSV: `generated/2026-05-26-ai-native-run/generated-test-cases.csv`</li><li>Generated draft JSON: `generated/2026-05-26-ai-native-run/generated-test-cases.json`</li><li>Case generation log: `generated/2026-05-26-ai-native-run/case-generation-log.json`</li><li>LLM call log: `generated/2026-05-26-ai-native-run/llm-log.json`</li><li>Final CSV: `generated/2026-05-26-ai-native-run/final-test-cases.csv`</li><li>Final JSON: `generated/2026-05-26-ai-native-run/final-test-cases.json`</li></ul>
+<h2>Counts</h2>
+<ul><li>Script-generated draft cases: 51</li><li>Final reviewed cases: 106</li><li>Final source distribution: AI+manual=56, AI=31, manual=18, script-generated+review-needed=1</li></ul>
+<h2>SiliconFlow Review</h2>
+<ul><li>Provider: siliconflow</li><li>Model: Qwen/Qwen3-8B</li><li>HTTP status: 200</li><li>Duration: 83034 ms</li><li>Prompt tokens: 4519</li><li>Completion tokens: 1744</li><li>Total tokens: 6263</li><li>API key logged: no</li></ul>
+<h2>Screenshot Evidence</h2>
+<ul><li>Pipeline run summary: `generated/2026-05-26-ai-native-run/screenshots/01-pipeline-run-summary.png`</li><li>Generated draft cases CSV: `generated/2026-05-26-ai-native-run/screenshots/02-generated-cases-csv.png`</li><li>Final reviewed cases CSV: `generated/2026-05-26-ai-native-run/screenshots/03-final-cases-csv.png`</li></ul>
+<h2>Human Review Boundary</h2>
+<ul><li>LLM output is treated as review evidence and is not merged without human judgment.</li><li>Payment-sensitive behavior remains gated: no real card data, no real payment submission, and declined-card probing stays disabled by default.</li></ul>
+</body>
+</html>

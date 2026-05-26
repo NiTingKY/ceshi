@@ -46,6 +46,11 @@ Current best evidence run: `exploration/runs/2026-05-24-112646`
 | R-038 | Checkout | Card / expiry / CVV validation is missing | Payment form quality risk | P0 | Empty and invalid local validation only |
 | R-039 | Cross-flow | Refresh, back, close, or re-entry loses order/session state | User loses purchase context | P1 | Session recovery |
 | R-040 | Cross-flow | Region, currency, or taxes are inconsistent | International commerce risk | P1 | Region/currency matrix |
+| R-041 | Compatibility | Responsive viewport or browser differences hide CTAs, plan cards, or checkout controls | Users cannot complete funnel on key devices | P1 | Mobile/tablet/desktop and Chrome/Safari/Firefox/WeChat matrix |
+| R-042 | Accessibility | Keyboard, focus, ARIA, error announcements, or contrast are insufficient | Users relying on assistive technology cannot complete flow | P1 | Keyboard, focus, accessible names, contrast and reduced-motion cases |
+| R-043 | Performance | Entry, loader, Paywall, or Checkout load too slowly or stall under poor network | Abandonment and duplicate attempts increase | P1 | Load thresholds, slow network, loader timeout and recovery |
+| R-044 | Analytics | Funnel events are missing, duplicated, or leak sensitive/payment data | Growth attribution and compliance reporting become unreliable | P1 | Quiz, Paywall, Checkout-safe event inspection |
+| R-045 | Subscription | Trial, renewal, grace period, cancellation, refund, upgrade, or downgrade states are inconsistent | Billing disputes and compliance issues | P1 | Subscription lifecycle state-transition cases |
 
 ## Current Safety Boundary
 

@@ -27,6 +27,7 @@ Script:
 Output log:
 
 - `generated/2026-05-24-112646-cases/llm-log.json`
+- `generated/2026-05-26-ai-native-run/llm-log.json`
 
 ## Real Model Run Result
 
@@ -36,42 +37,40 @@ Latest run:
 - Model: `Qwen/Qwen3-8B`
 - Endpoint: `https://api.siliconflow.cn/v1/chat/completions`
 - HTTP status: 200
-- Duration: 57594 ms
+- Duration: 83034 ms
 - Billable API calls recorded by script: 1
 - Provider usage metadata returned: true
-- Prompt tokens: 4455
-- Completion tokens: 1047
-- Total tokens: 5502
+- Prompt tokens: 4519
+- Completion tokens: 1744
+- Total tokens: 6263
 - API key logged: false
 
 The provider returned this structured review output:
 
 ```json
 {
-  "coverageVerdict": "Partial coverage with notable gaps in Event Date, Loader, and Unit Switch modules",
+  "coverageVerdict": "Partial coverage with critical risks addressed but gaps in navigation resilience and edge case validation",
   "strongAreas": [
-    "Quiz Entry (P0 coverage of age band flow)",
-    "Single Choice (17 cases covering core functionality)",
-    "Email Capture (3 P0 validation cases)"
+    "Comprehensive P0 validation for input boundaries (height, weight, email)",
+    "Mutual exclusivity checks for single/multi-select elements",
+    "Health data consent compliance testing"
   ],
   "highValueGaps": [
-    "Event Date module lacks P1/P2 coverage for date selection anomalies",
-    "Loader module needs validation for stalled progress indicators",
-    "Unit Switch module requires more comprehensive conversion validation"
+    "No test cases for cross-month date selection (R-019)",
+    "Incomplete handling of P2 risks in navigation (R-002, R-017, R-019)",
+    "Missing validation for goal weight > current weight (R-013)",
+    "Loader performance edge cases (R-020) require more detailed testing"
   ],
-  "unsafeOrOverclaimRisks": [
-    "Checkout module has no P0 cases despite critical safety boundary requirements",
-    "Security risk in Name Capture (R-025/R-026) only has 1 P0 case"
-  ],
+  "unsafeOrOverclaimRisks": [],
   "suggestedCaseAdditions": [
     {
       "module": "Event Date",
       "priority": "P1",
-      "title": "Date picker rejects past dates",
-      "reason": "Addresses R-018 risk with explicit date validation"
+      "title": "Invalid date range selection prevents form submission",
+      "reason": "Risk R-018 requires explicit validation of date constraints"
     }
   ],
-  "nextStep": "Implement suggested P1/P2 cases for Event Date and Loader modules, then validate unit conversion accuracy in Unit Switch flows"
+  "nextStep": "Prioritize adding test cases for R-019 (cross-month date selection) and R-013 (goal weight > current weight). Review script-generated+review-needed case for potential safety boundary violations."
 }
 ```
 
@@ -83,7 +82,7 @@ The script sends a summarized JSON prompt rather than the full CSV. This keeps t
 {
   "objective": "Review a BetterMe Pilates QA case set and return a concise JSON quality review.",
   "knownBoundary": "Production checkout must not submit payment or use real card data.",
-  "caseCount": 75,
+  "caseCount": 106,
   "moduleCounts": {},
   "sourceCounts": {},
   "typeCounts": {},
@@ -106,4 +105,4 @@ Accept a model suggestion only if all rules pass:
 
 ## Review Decision
 
-The SiliconFlow output is useful as coverage-review evidence, especially for Event Date, Loader, and Unit Switch expansion. One model claim is rejected: it says Checkout has no P0 cases, but `docs/test-cases-final.csv` includes P0 Checkout safety and validation cases. This confirms that model output must be reviewed against the full CSV before any merge. The concrete next action is to improve Event Date, Loader, Unit Switch, accessibility, localization, and subscription-lifecycle coverage in a separate case-design pass.
+The SiliconFlow output is useful as coverage-review evidence, especially for Paywall/Checkout resilience, Event Date, Loader, navigation consistency, and manual safety review. Earlier model output incorrectly claimed Checkout had no P0 cases; the current pipeline run no longer repeats that claim, but the review rule remains the same: every model suggestion must be checked against the full CSV before merge. The concrete next action is Demo video packaging and optional executable P0 automation.

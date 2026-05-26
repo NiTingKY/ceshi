@@ -116,7 +116,7 @@ Outcome:
 
 - Added `pipeline/final-case-builder.js`.
 - Merged the 74-case manual v1 set with script evidence.
-- Produced 75 final cases.
+- Produced 106 final cases after adding task-book coverage extensions.
 - Added risk references, evidence references and refinement notes.
 
 Key artifacts:
@@ -137,7 +137,7 @@ Why it matters:
 | Funnel state map | Done |
 | Page taxonomy | Done |
 | Risk register | Done |
-| Test case final set | Done, 75 cases |
+| Test case final set | Done, 106 cases |
 | AI/script generation pipeline | Done, rule-based layer |
 | AI prompt scaffold | Done, v1 |
 | Checkout safe probe | Done |

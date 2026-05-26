@@ -4,13 +4,15 @@ Updated: 2026-05-24
 
 ## Goal
 
-Provide a repeatable generation layer that turns captured BetterMe funnel runs into structured test case drafts. This is the deterministic script layer before any optional LLM refinement step.
+Provide a repeatable generation layer that turns captured BetterMe funnel runs into structured test case drafts, runs a SiliconFlow Qwen3-8B review, and writes a reviewed final CSV/JSON package with screenshot evidence.
 
 ## Current Implementation
 
 Script:
 
 - `pipeline/case-generator.js`
+- `pipeline/ai-native-case-pipeline.js`
+- `pipeline/final-case-builder.js`
 - `pipeline/siliconflow-llm-refinement.js`
 - `pipeline/bocha-ai-refinement.js`
 
@@ -24,6 +26,11 @@ Outputs:
 - `generated/2026-05-24-112646-cases/generated-test-cases.json`
 - `generated/2026-05-24-112646-cases/case-generation-log.json`
 - `generated/2026-05-24-112646-cases/llm-log.json`
+- `generated/2026-05-26-ai-native-run/pipeline-run-summary.md`
+- `generated/2026-05-26-ai-native-run/final-test-cases.csv`
+- `generated/2026-05-26-ai-native-run/screenshots/01-pipeline-run-summary.png`
+- `generated/2026-05-26-ai-native-run/screenshots/02-generated-cases-csv.png`
+- `generated/2026-05-26-ai-native-run/screenshots/03-final-cases-csv.png`
 
 ## Commands
 
@@ -31,6 +38,20 @@ Portable command:
 
 ```powershell
 npm run generate:cases
+```
+
+Full AI Native pipeline command:
+
+```powershell
+$env:SILICONFLOW_API_KEY='<your key>'
+npm run pipeline:ai-native
+```
+
+If a successful `generated/2026-05-26-ai-native-run/llm-log.json` already exists and you only need to regenerate screenshots or the run summary, use:
+
+```powershell
+$env:AI_NATIVE_REUSE_LLM_LOG='1'
+npm run pipeline:ai-native
 ```
 
 Equivalent direct Node command:
@@ -64,6 +85,12 @@ npm run llm:bocha
 ## Latest Result
 
 - Generated cases: 51
+- Full pipeline final reviewed cases: 106
+- Full pipeline evidence directory: `generated/2026-05-26-ai-native-run`
+- Screenshot evidence:
+  - `generated/2026-05-26-ai-native-run/screenshots/01-pipeline-run-summary.png`
+  - `generated/2026-05-26-ai-native-run/screenshots/02-generated-cases-csv.png`
+  - `generated/2026-05-26-ai-native-run/screenshots/03-final-cases-csv.png`
 - CSV parse check: 51 rows
 - Module distribution:
   - Checkout: 1
@@ -117,7 +144,7 @@ Implemented model call:
 Boundary:
 
 - SiliconFlow `Qwen/Qwen3-8B` is used as the main real LLM call.
-- The latest SiliconFlow run returned provider-native usage: 4455 prompt tokens, 1047 completion tokens, 5502 total tokens.
+- The latest full pipeline SiliconFlow run returned provider-native usage: 4519 prompt tokens, 1744 completion tokens, 6263 total tokens.
 - The API key is read from `SILICONFLOW_API_KEY` and is not written to the log.
 - Bocha remains as an optional Search/AI Search dry-run, not the main stage-3 LLM evidence.
 
@@ -127,6 +154,7 @@ Tests:
 
 - `pipeline/tests/case-generator.test.js`
 - `pipeline/tests/final-case-builder.test.js`
+- `pipeline/tests/ai-native-case-pipeline.test.js`
 - `pipeline/tests/siliconflow-llm-refinement.test.js`
 - `pipeline/tests/bocha-ai-refinement.test.js`
 - `pipeline/tests/project-audit.test.js`
@@ -138,6 +166,7 @@ Coverage:
 - Section header filtering.
 - CSV escaping.
 - Final case merge behavior.
+- End-to-end pipeline orchestration and screenshot evidence hooks.
 - Basic artifact quality audit.
 
 Latest verification is captured in `docs/submission-checklist.md`.

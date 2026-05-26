@@ -21,7 +21,7 @@ Current best evidence run:
 | Cover state transitions such as forward/back/refresh/close-reopen/timeout/network interruption | Refresh/back/re-entry risks are represented in final cases and risk register; multi-tab and close-reopen are designed but not deeply evidenced | `docs/risk-register.md`, `docs/test-cases-final.csv`, `docs/branch-coverage-plan.md` | Partially covered; deeper state matrix remains future work |
 | Document Paywall plans, prices, timer, exit/policy behavior | Observed HKD plans, discounted prices, per-day prices, renewal copy, countdown and policy/FAQ areas are documented | `docs/funnel-observation.md`, `exploration/runs/2026-05-24-112646/paywall-summary.md` | Covered for observed HKD path |
 | Document Checkout fields, payment methods, and error states safely | TokenEx card fields and wallet entrances are observed without real card entry; invalid card-state tests are design cases, not executed payment tests | `docs/checkout-safe-probe.md`, `exploration/runs/2026-05-24-112646/checkout-summary.md` | Covered within safety boundary |
-| Provide P0/P1/P2 risk list | 40 risks are listed and final cases reference risk IDs | `docs/risk-register.md`, `docs/test-cases-final.csv` | Covered |
+| Provide P0/P1/P2 risk list | 45 risks are listed and final cases reference risk IDs | `docs/risk-register.md`, `docs/test-cases-final.csv` | Covered |
 | Include probability, business impact, and coverage method | Risk table has impact and coverage; probability is added below as a reviewer-facing supplement | `docs/risk-register.md`, this document | Covered by supplement |
 
 ## Stage 1 Risk Probability Supplement
@@ -42,15 +42,16 @@ The original risk table keeps the readable six-column format used by the final c
 | `R-028` to `R-030` | High | Discount conversion and price consistency | Scratch-card, promo carryover, refresh/re-entry cases |
 | `R-031` to `R-035` | High | Revenue, billing trust, subscription disclosure, refund policy | Paywall price, per-day price, renewal copy, timer and policy cases |
 | `R-036` to `R-038` | High | Production payment safety and checkout quality | Payment-domain blocking, safe probe, invalid local validation design |
-| `R-039`, `R-040` | Medium | Session continuity, region/currency consistency | Refresh/back/re-entry cases; localization matrix remains future work |
+| `R-039`, `R-040` | Medium | Session continuity, region/currency consistency | Refresh/back/re-entry cases and localization design matrix |
+| `R-041` to `R-045` | Medium | Compatibility, accessibility, performance, analytics, subscription lifecycle | Coverage-extension cases in `docs/test-cases-coverage-extension.csv` |
 
 ## Stage 2: Final Test Case Set
 
 | Task-book requirement | Project implementation | Evidence | Current judgment |
 | --- | --- | --- | --- |
-| Provide CSV/Excel-style case set | Final CSV and JSON mirror contain 75 cases | `docs/test-cases-final.csv`, `docs/test-cases-final.json` | Covered |
-| Include required fields | Final schema has id, module, priority, type, title, precondition, steps, expected, source, riskRefs, evidence, refinementNotes | `docs/test-cases-final.csv` | Covered; submodule is represented through `module` plus page taxonomy |
-| Use source tags and maintain human contribution | Source distribution is `AI` 31, `AI+manual` 25, `manual` 18, `script-generated+review-needed` 1 | `docs/test-cases-final.csv` | Covered; manual or AI+manual is 43/75 = 57.3% |
+| Provide CSV/Excel-style case set | Final CSV and JSON mirror contain 106 cases | `docs/test-cases-final.csv`, `docs/test-cases-final.json` | Covered |
+| Include required fields | Final schema has id, module, submodule, priority, type, title, precondition, steps, expected, source, riskRefs, evidence, refinementNotes | `docs/test-cases-final.csv` | Covered; `module` uses the task-book top-level modules and `submodule` keeps the detailed page or feature area |
+| Use source tags and maintain human contribution | Source distribution is `AI` 31, `AI+manual` 56, `manual` 18, `script-generated+review-needed` 1 | `docs/test-cases-final.csv` | Covered; manual or AI+manual is 74/106 = 69.8% |
 | Classify 30-50 Quiz pages into prototypes | Observed main path has 46 steps; Quiz-like pages are normalized into stable prototypes | `docs/page-taxonomy.md` | Covered |
 | Pick representative pages per prototype for deeper tests | Multi-select, consent, unit input, loader, email/name, discount, Paywall, and Checkout have representative deep cases | `docs/test-cases-final.csv`, `docs/page-taxonomy.md` | Covered for main path |
 | Cover equivalence classes and boundary values | Height boundaries `89/90/243/244`, empty email, invalid email, empty weight, same goal/current weight, special-name injection | `docs/test-cases-final.csv` | Covered; deeper conversion matrix remains future work |
@@ -59,8 +60,8 @@ The original risk table keeps the readable six-column format used by the final c
 | Cover cross-flow states | Refresh loader, refresh discount, back from Paywall, terms/privacy return, back/forward answer persistence | `docs/test-cases-final.csv` | Covered first pass; multi-tab/close-reopen remain future work |
 | Cover Paywall price/timer/renewal/policy | Nine Paywall cases cover plans, discounts, per-day price, renewal copy, selection, timer, expiry, policy, FAQ | `TC-PW-001` to `TC-PW-009` | Covered |
 | Cover Checkout formatting and payment safety | Seven Checkout cases cover payment blocking, empty form, declined-card gate, invalid expiry/CVC, wallet entrance, TokenEx field capture | `TC-CO-001` to `TC-CO-006`, `AUTO-046-01` | Covered within safety boundary |
-| Cover responsive, compatibility, accessibility, localization, performance, analytics | Some resilience/performance design exists through loader and responsive intent; full matrix is not executed | `docs/coverage-review.md`, `docs/branch-coverage-plan.md` | Partial gap to disclose |
-| Cover subscription lifecycle design | Renewal disclosure is covered; full lifecycle states are not deeply represented | `TC-PW-004`, `docs/coverage-review.md` | Partial gap to disclose |
+| Cover responsive, compatibility, accessibility, localization, performance, analytics | 23 Cross-cutting extension cases cover these areas; the cross-cutting probe adds viewport screenshots, DOM/control metadata, local render timing and analytics-like URL inventory from captured pages | `docs/test-cases-coverage-extension.csv`, `docs/test-cases-final.csv`, `docs/cross-cutting-coverage-status.md`, `generated/2026-05-26-cross-cutting-probe/summary.md` | Partly executed for Chromium/captured-page checks; Safari, WeChat, real locale and backend analytics remain disclosed gaps |
+| Cover subscription lifecycle design | 8 Subscription extension cases cover trial, active, renewal failure, cancel, refund, upgrade/downgrade and abandonment states | `TC-SUB-001` to `TC-SUB-008` in `docs/test-cases-final.csv`, `docs/cross-cutting-coverage-status.md` | Covered as design matrix; execution requires staging or sandbox billing |
 
 ## Human Review Notes
 

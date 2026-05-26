@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <style>
+    .bg { fill: #f8fafc; }
+    .root { fill: #111827; }
+    .node { fill: #ffffff; stroke: #94a3b8; stroke-width: 2; }
+    .p0 { fill: #fee2e2; stroke: #ef4444; }
+    .p1 { fill: #fef3c7; stroke: #f59e0b; }
+    .p2 { fill: #e0f2fe; stroke: #0284c7; }
+    .text { font-family: Arial, sans-serif; font-size: 18px; fill: #111827; }
+    .small { font-family: Arial, sans-serif; font-size: 14px; fill: #334155; }
+    .title { font-family: Arial, sans-serif; font-size: 28px; font-weight: 700; fill: #ffffff; }
+    .line { stroke: #64748b; stroke-width: 2; }
+  </style>
+  <rect class="bg" width="1400" height="900"/>
+  <rect class="root" x="475" y="30" width="450" height="80" rx="12"/>
+  <text class="title" x="700" y="78" text-anchor="middle">BetterMe Funnel Risk Mind Map</text>
+
+  <line class="line" x1="700" y1="110" x2="230" y2="205"/>
+  <line class="line" x1="700" y1="110" x2="520" y2="205"/>
+  <line class="line" x1="700" y1="110" x2="835" y2="205"/>
+  <line class="line" x1="700" y1="110" x2="1160" y2="205"/>
+
+  <rect class="node" x="80" y="185" width="300" height="70" rx="10"/>
+  <text class="text" x="230" y="227" text-anchor="middle">Quiz</text>
+  <rect class="p0" x="35" y="300" width="390" height="72" rx="10"/>
+  <text class="text" x="230" y="330" text-anchor="middle">P0: R-006 Empty multi-select</text>
+  <text class="small" x="230" y="354" text-anchor="middle">missing data creates bad recommendations</text>
+  <rect class="p0" x="35" y="390" width="390" height="72" rx="10"/>
+  <text class="text" x="230" y="420" text-anchor="middle">P0: R-010/R-011 Height & unit</text>
+  <text class="small" x="230" y="444" text-anchor="middle">89/90/243/244 and cm/ft conversion</text>
+  <rect class="p0" x="35" y="480" width="390" height="72" rx="10"/>
+  <text class="text" x="230" y="510" text-anchor="middle">P0: R-014/R-015 Consent gate</text>
+  <text class="small" x="230" y="534" text-anchor="middle">health-data compliance and CTA state</text>
+  <rect class="p0" x="35" y="570" width="390" height="72" rx="10"/>
+  <text class="text" x="230" y="600" text-anchor="middle">P0: R-023/R-025 Email & name</text>
+  <text class="small" x="230" y="624" text-anchor="middle">account delivery, escaping and XSS risk</text>
+
+  <rect class="node" x="435" y="185" width="300" height="70" rx="10"/>
+  <text class="text" x="585" y="227" text-anchor="middle">Discount / Paywall</text>
+  <rect class="p0" x="440" y="300" width="390" height="72" rx="10"/>
+  <text class="text" x="635" y="330" text-anchor="middle">P0: R-028/R-029 Discount carryover</text>
+  <text class="small" x="635" y="354" text-anchor="middle">scratch card and promo price linkage</text>
+  <rect class="p0" x="440" y="390" width="390" height="72" rx="10"/>
+  <text class="text" x="635" y="420" text-anchor="middle">P0: R-032/R-033 Plan pricing</text>
+  <text class="small" x="635" y="444" text-anchor="middle">default plan, original price, per-day math</text>
+  <rect class="p0" x="440" y="480" width="390" height="72" rx="10"/>
+  <text class="text" x="635" y="510" text-anchor="middle">P0: R-034 Renewal disclosure</text>
+  <text class="small" x="635" y="534" text-anchor="middle">subscription terms before purchase CTA</text>
+
+  <rect class="node" x="820" y="185" width="300" height="70" rx="10"/>
+  <text class="text" x="970" y="227" text-anchor="middle">Checkout</text>
+  <rect class="p0" x="850" y="300" width="390" height="72" rx="10"/>
+  <text class="text" x="1045" y="330" text-anchor="middle">P0: R-036 Payment guardrails</text>
+  <text class="small" x="1045" y="354" text-anchor="middle">block/record payment domains; no real payment</text>
+  <rect class="p0" x="850" y="390" width="390" height="72" rx="10"/>
+  <text class="text" x="1045" y="420" text-anchor="middle">P0: R-037 Declined-card gate</text>
+  <text class="small" x="1045" y="444" text-anchor="middle">test card probing disabled unless explicitly gated</text>
+  <rect class="p0" x="850" y="480" width="390" height="72" rx="10"/>
+  <text class="text" x="1045" y="510" text-anchor="middle">P0: R-038 Local card validation</text>
+  <text class="small" x="1045" y="534" text-anchor="middle">empty/invalid expiry/CVV without submission</text>
+
+  <rect class="node" x="1080" y="185" width="270" height="70" rx="10"/>
+  <text class="text" x="1215" y="227" text-anchor="middle">Cross-cutting</text>
+  <rect class="p1" x="965" y="610" width="390" height="72" rx="10"/>
+  <text class="text" x="1160" y="640" text-anchor="middle">P1: R-041/R-042 Devices & A11y</text>
+  <text class="small" x="1160" y="664" text-anchor="middle">viewport, keyboard, focus, ARIA, contrast</text>
+  <rect class="p1" x="965" y="700" width="390" height="72" rx="10"/>
+  <text class="text" x="1160" y="730" text-anchor="middle">P1: R-043/R-044 Perf & analytics</text>
+  <text class="small" x="1160" y="754" text-anchor="middle">load, loader recovery, event inventory</text>
+  <rect class="p1" x="965" y="790" width="390" height="72" rx="10"/>
+  <text class="text" x="1160" y="820" text-anchor="middle">P1: R-045 Subscription lifecycle</text>
+  <text class="small" x="1160" y="844" text-anchor="middle">trial, renewal, grace, cancel, refund, upgrade</text>
+</svg>
